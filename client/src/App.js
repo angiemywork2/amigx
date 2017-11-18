@@ -1,21 +1,57 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navpills from "./components/Navpills";
+import Home from "./pages/Home";
+import Tips from "./pages/Tips";
+import otc from "./pages/otc";
+import Medication from "./pages/Medication";
+import Navbar from 'react-navbar';
+import ReactDOM from 'react-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
+
+
+
+var reactNavBar = require('react-nav-bar');
+var NavBar = reactNavBar.NavBar;
+var Menu = reactNavBar.Menu;
+
+
+// <body class="home-page -theme-light -page-index"><div id="main-wrap">
+//     <div id="banner-wrap" class="background-custom-background">
+//       <nav>
+//         <div class="nav-wrapper">
+          
+//           <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+
+const App = () =>
+  <Router>
+    <div>
+      <Navpills />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Tips" component={Tips} />
+        <Route exact path="/otc" component={otc} />
+        <Route exact path="/Medication" component={Medication} />
+             
+    </div>
+  </Router>;
+
+
+
+ 
+    
 
 export default App;
+
+
+
+ 
+
+
+
+
+
+

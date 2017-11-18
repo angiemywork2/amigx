@@ -1,0 +1,26 @@
+{
+  "name": "amigx",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "create-react-class": "^15.6.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-menu": "0.0.10",
+    "react-menus": "^2.0.8",
+    "react-nav-bar": "^0.6.5",
+    "react-navbar": "^1.0.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/angiemywork2/amigx.git",
+  "author": "aragin <angiemywork2@yahoo.com>",
+  "license": "MIT"
+}

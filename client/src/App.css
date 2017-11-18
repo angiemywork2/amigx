@@ -3,12 +3,20 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: rx.jpeg infinite 20s linear;
+  background: url('rx.jpeg');
   height: 80px;
 }
 
+.Navpills {
+  background-color: blue;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
 .App-header {
-  background-color: #222;
+  background-color: blue;
   height: 150px;
   padding: 20px;
   color: white;
@@ -22,7 +30,32 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+@keyframes rx.jpeg {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.nav nav-tabs {
+  font-size: 140px;
+}
+
+/* unvisited link */
+a:link {
+    color: purple;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
