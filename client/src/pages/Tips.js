@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import Disclaimer from "../components/Disclaimer";
 
 const Tips = () =>
   <Container fluid>
@@ -68,6 +69,9 @@ const Tips = () =>
         </p>
       </Jumbotron>
     </Col>
+    </Row>
+    <Row>
+      <Disclaimer></Disclaimer>
     </Row>
   </Container>;
 
