@@ -124,39 +124,40 @@ const Tips = () =>
       <Jumbotron>
         <h1>High Cholestorol</h1>
         <h2>what it high cholesterol ?</h2>
-<p>
-Cholesterol is a type of fat (lipid) in your blood. Your cells need cholesterol, and your body makes all it needs. But you also get cholesterol from the food you eat.
-If you have too much cholesterol, it starts to build up in your arteries. (Arteries are the blood vessels that carry blood away from the heart.) This is called hardening of the arteries, or atherosclerosis camera.gif. It is the starting point for some heart and blood flow problems. The buildup can narrow the arteries and make it harder for blood to flow through them. 
-</p>
+            <p>
+              Cholesterol is a type of fat (lipid) in your blood. Your cells need cholesterol, and your body makes all it needs. But you also get cholesterol from the food you eat.
+              If you have too much cholesterol, it starts to build up in your arteries. (Arteries are the blood vessels that carry blood away from the heart.) This is called hardening of the arteries, or atherosclerosis camera.gif. It is the starting point for some heart and blood flow problems. The buildup can narrow the arteries and make it harder for blood to flow through them. 
+              </p>
 
         <h2>Symptoms</h2>
-<p>
-High cholesterol does not cause symptoms. It is usually found during a blood test that measures cholesterol levels.
-Some people with rare lipid disorders may have symptoms such as bumps in the skin, hands, or feet, which are caused by deposits of extra cholesterol and other types of fat.
-</p>
+          <p>
+            High cholesterol does not cause symptoms. It is usually found during a blood test that measures cholesterol levels.
+            Some people with rare lipid disorders may have symptoms such as bumps in the skin, hands, or feet, which are caused by deposits of extra cholesterol and other types of fat.
+          </p>
 
         <h2>Common types if applicable</h2>
-<p>There are different types of cholesterol.
-<ul>
-<li>
-LDL is the "bad" cholesterol. It's the kind that can raise your risk of heart disease, heart attack, and stroke.
-</li>
-<li>
-HDL is the "good" cholesterol. It's the kind that is linked to a lower risk of heart disease, heart attack, and stroke.
-</li>
-</ul>
-</p>
+          <p>There are different types of cholesterol.
+          <ul>
+            <li>
+              LDL is the "bad" cholesterol. It's the kind that can raise your risk of heart disease, heart attack, and stroke.
+            </li>
+            <li>
+              HDL is the "good" cholesterol. It's the kind that is linked to a lower risk of heart disease, heart attack, and stroke.
+            </li>
+          </ul>
+        </p>
 
         <h2>health problems it causes</h2>
-<p>
-The buildup can also lead to dangerous blood clots and inflammation that can cause heart attacks and strokes.
-</p>
+          <p>
+            The buildup can also lead to dangerous blood clots and inflammation that can cause heart attacks and strokes.
+          </p>
 
         <h2></h2>
           <p>
          
           </p>
       </Jumbotron>
+
       <Jumbotron>
         <h1>Mental Health</h1>
         <h2>Concerns</h2>
@@ -172,8 +173,6 @@ The buildup can also lead to dangerous blood clots and inflammation that can cau
               <li>Extreme mood changes</li>
               <li>Withdrawal from friends and activities</li>
               <li>significant tiredness, low energy, or problems sleeping</li>
-              <li></li>
-              <li></li>
             </ul>
           </p>
 
@@ -191,24 +190,25 @@ The buildup can also lead to dangerous blood clots and inflammation that can cau
           <p>
          While Latino communities show similar susceptibility to mental illness as the general population, unfortunately, we experience disparities in access to treatment and in the quality of treatment we receive. This inequality puts us at a higher risk for more severe and persistent forms of mental health conditions.
 
-As a community, Latinos are less likely to seek mental health treatment. A 2001 Surgeon General’s report found that only 20% of Latinos with symptoms of a psychological disorder talk to a doctor about their concerns. Only 10% contact a mental health specialist. Yet, without treatment, certain mental health conditions can worsen and become disabling.
+        As a community, Latinos are less likely to seek mental health treatment. A 2001 Surgeon General’s report found that only 20% of Latinos with symptoms of a psychological disorder talk to a doctor about their concerns. Only 10% contact a mental health specialist. Yet, without treatment, certain mental health conditions can worsen and become disabling.
           </p>
       </Jumbotron>
+
       <Jumbotron>
         <h1>Obesity</h1>
         <h2>what it obesity</h2> 
-<p>Obesity means having too much body fat. Obesity happens over time when you eat more calories than you use. The balance between calories-in and calories-out differs for each person. Factors that might affect your weight include your genetic makeup, overeating, eating high-fat foods, and not being physically active 
-<p>
+          <p>Obesity means having too much body fat. Obesity happens over time when you eat more calories than you use. The balance between calories-in and calories-out differs for each person. Factors that might affect your weight include your genetic makeup, overeating, eating high-fat foods, and not being physically active 
+          </p>
 
         <h2>Symptoms</h2>
-<p>
-Being a little overweight may not cause many noticeable problems. However, once you are carrying a few extra kilograms (or pounds), you may develop symptoms that affect your daily life
-</p>
+          <p> 
+            Being a little overweight may not cause many noticeable problems. However, once you are carrying a few extra kilograms (or pounds), you may develop symptoms that affect your daily life
+          </p>
 
         <h2>health problems </h2>
-<p>
- Obesity increases your risk of diabetes, heart disease, stroke, arthritis, and some cancers. If you have obesity, losing even 5 to 10 percent of your weight can delay or prevent some of these diseases. For example, that means losing 10 to 20 pounds if you weigh 200 pounds Obesity increases your risk of diabetes, heart disease, stroke, arthritis, and some cancers.
-</p>
+          <p>
+            Obesity increases your risk of diabetes, heart disease, stroke, arthritis, and some cancers. If you have obesity, losing even 5 to 10 percent of your weight can delay or prevent some of these diseases. For example, that means losing 10 to 20 pounds if you weigh 200 pounds Obesity increases your risk of diabetes, heart disease, stroke, arthritis, and some cancers.
+          </p>
 
         <h2>Significance to the Latino Community</h2>
           <p>
@@ -216,10 +216,7 @@ Being a little overweight may not cause many noticeable problems. However, once 
               <li>Among </li>
             </ul>
           </p>
-        <h2></h2>
-          <p>
-         
-          </p>
+        
       </Jumbotron>
     </Col>
     </Row>
