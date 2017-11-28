@@ -1,81 +1,88 @@
-// import React from "react";
+
 import React, { Component } from 'react';
+
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Navpills from "../components/Navpills";
+
+import Tips from "../pages/Tips";
+import otc from "../pages/otc";
+import Login from "../pages/Login";
+import Medication from "../pages/Medication";
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
-import Auth from '../Auth/Auth.js';
+// import Auth from './Auth/Auth.js';
 import { Button } from 'react-bootstrap';
 
 
-const auth = new Auth();
-auth.login();
-
-class Home extends Component {
-
-  // <div>
-  //   <h1><center>Welcome to Mi MediAmig<sub>X</sub></center></h1>
-  //   <center><p>
-  //     Mi MediAmig<sub>X</sub>
-  //   </p></center>
-  // </div>;
 
 
+var reactNavBar = require('react-nav-bar');
+var NavBar = reactNavBar.NavBar;
+var Menu = reactNavBar.Menu;
 
- goTo(route) {
-    this.props.history.replace(`/${route}`)
-  }
 
-  login() {
-    this.props.auth.login();
-  }
+// <body class="home-page -theme-light -page-index"><div id="main-wrap">
+//     <div id="banner-wrap" class="background-custom-background">
+//       <nav>
+//         <div class="nav-wrapper">
+          
+//           <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-  logout() {
-    this.props.auth.logout();
-  }
 
-  render() {
-    const { isAuthenticated } = this.props.auth;
-
-    return (
-      <div>
-        <Navbar fluid>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#">Auth0 - React</a>
-            </Navbar.Brand>
-            <Button
-              bsStyle="primary"
-              className="btn-margin"
-              onClick={this.goTo.bind(this, 'home')}
-            >
-              Home
-            </Button>
-            {
-              !isAuthenticated() && (
-                  <Button
-                    bsStyle="primary"
-                    className="btn-margin"
-                    onClick={this.login.bind(this)}
-                  >
-                    Log In
-                  </Button>
-                )
-            }
-            {
-              isAuthenticated() && (
-                  <Button
-                    bsStyle="primary"
-                    className="btn-margin"
-                    onClick={this.logout.bind(this)}
-                  >
-                    Log Out
-                  </Button>
-                )
-            }
-          </Navbar.Header>
-        </Navbar>
-      </div>
-    );
-  }
- }
+const Home = () =>
+  <div>
+    <h1><center>Welcome to Mi MediAmig<sub>X</sub></center></h1>
+    <center><p>
+      Mi MediAmig<sub>X</sub>
+    </p></center>
+  </div>;
 
 export default Home;
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import { Route, Router } from 'react-router-dom';
+// import App from './App';
+// import Home from './Home/Home';
+// import Callback from './Callback/Callback';
+// import Auth from './Auth/Auth';
+// import history from './history';
+
+// const auth = new Auth();
+
+// const handleAuthentication = (nextState, replace) => {
+//   if (/access_token|id_token|error/.test(nextState.location.hash)) {
+//     auth.handleAuthentication();
+//   }
+// }
+
+// export const makeMainRoutes = () => {
+//   return (
+//     <Router history={history} component={App}>
+//       <div>
+//         <Route path="/" render={(props) => <App auth={auth} {...props} />} />
+//         <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+//         <Route path="/callback" render={(props) => {
+//           handleAuthentication(props);
+//           return <Callback {...props} /> 
+//         }}/>
+//       </div>
+//     </Router>
+//   );
+// }

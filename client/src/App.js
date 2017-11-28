@@ -10,7 +10,7 @@ import Login from "./pages/Login";
 import Medication from "./pages/Medication";
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
-import Auth from './Auth/Auth.js';
+// import Auth from './Auth/Auth.js';
 import { Button } from 'react-bootstrap';
 
 
