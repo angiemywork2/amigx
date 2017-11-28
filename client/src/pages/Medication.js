@@ -13,9 +13,15 @@ const Medication = () =>
     <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
+          <h1>Medication Translator</h1>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              Basic panel example
+            </div>
+          </div>
           <div className="row">
             <div className="col-md-6, col-md-offset-1">
-              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">Prescription Example</button>
               <div id="demo" className="collapse">
                 <div className="thumbnail">  
                  <div className="caption, text-center">
