@@ -20,7 +20,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className= "panel-title">
                 <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                  <h2>What is Diabetes?</h2>
+                  <h2>What is Diabetes? <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -37,7 +37,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsea2">
-                  <h2>Symptoms</h2>
+                  <h2>Symptoms <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -62,7 +62,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsea3">
-                  <h2>Common Types</h2>
+                  <h2>Common Types <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -86,7 +86,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsea4">
-                  <h2>Health Problems</h2>
+                  <h2>Health Problems <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -110,7 +110,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsea5">
-                  <h2>Significance to the latino community</h2>
+                  <h2>Significance to the latino community <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -132,7 +132,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsea6">
-                  <h2>Find more information</h2>
+                  <h2>Find more information <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -170,7 +170,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseb1">
-                  <h2>What is High Blood Pressure</h2>
+                  <h2>What is High Blood Pressure? <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -187,7 +187,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseb2">
-                  <h2>Symptoms</h2>
+                  <h2>Symptoms <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -212,7 +212,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseb3">
-                  <h2>Health Problems</h2>
+                  <h2>Health Problems <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -234,7 +234,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseb4">
-                  <h2>Significance to the Latino Community</h2>
+                  <h2>Significance to the Latino Community <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -254,7 +254,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion2" href="#collapseb5">
-                  <h2>Find more information</h2>
+                  <h2>Find more information <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -275,7 +275,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapsec1">
-                  <h2>What is High Cholesterol ?</h2>
+                  <h2>What is High Cholesterol? <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -299,7 +299,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapsec2">
-                  <h2>Symptoms</h2>
+                  <h2>Symptoms <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -323,7 +323,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapsec3">
-                  <h2>Common Types</h2>
+                  <h2>Common Types <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -347,7 +347,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapsec4">
-                  <h2>Health Problems</h2>
+                  <h2>Health Problems <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -364,7 +364,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion3" href="#collapsec5">
-                  <h2>More Information</h2>
+                  <h2>More Information <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -386,7 +386,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion4" href="#collapsed1">
-                  <h2>What is Mental Health</h2>
+                  <h2>What is Mental Health? <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -416,7 +416,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion4" href="#collapsed2">
-                  <h2>Symptoms</h2>
+                  <h2>Symptoms <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -443,7 +443,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion4" href="#collapsed3">
-                  <h2>Common Types</h2>
+                  <h2>Common Types <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -465,7 +465,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion4" href="#collapsed4">
-                  <h2>Significance to the latino community</h2>
+                  <h2>Significance to the latino community <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -492,7 +492,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion4" href="#collapsed5">
-                  <h2>Find more Information</h2>
+                  <h2>Find more Information <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -513,7 +513,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsee1">
-                  <h2>What it Obesity</h2> 
+                  <h2>What it Obesity <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2> 
                 </a>
               </h1>
             </div>
@@ -530,7 +530,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsee2">
-                  <h2>Symptoms</h2>
+                  <h2>Symptoms <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -547,7 +547,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsee3">
-                  <h2>Health Problems </h2>
+                  <h2>Health Problems <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -564,7 +564,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsee4">
-                  <h2>Significance to the Latino Community</h2>
+                  <h2>Significance to the Latino Community <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
@@ -583,7 +583,7 @@ const Tips = () =>
             <div className="panel-heading">
               <h1 className="panel-title">
                 <a data-toggle="collapse" data-parent="#accordion" href="#collapsee5">
-                  <h2>Find more Information</h2>
+                  <h2>Find more Information <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
