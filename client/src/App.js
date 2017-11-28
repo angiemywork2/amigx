@@ -6,9 +6,12 @@ import Navpills from "./components/Navpills";
 import Home from "./pages/Home";
 import Tips from "./pages/Tips";
 import otc from "./pages/otc";
+import Login from "./pages/Login";
 import Medication from "./pages/Medication";
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
+// import Auth from './Auth/Auth.js';
+import { Button } from 'react-bootstrap';
 
 
 
@@ -35,14 +38,10 @@ const App = () =>
         <Route exact path="/Tips" component={Tips} />
         <Route exact path="/otc" component={otc} />
         <Route exact path="/Medication" component={Medication} />
+        <Route exact path="/Login" component={Login} />
              
     </div>
   </Router>;
-
-
-
- 
-    
 
 export default App;
 

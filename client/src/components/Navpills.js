@@ -4,17 +4,21 @@ import { Link } from "react-router-dom";
 const Navpills = () =>
   <ul className="nav nav-tabs">
     <li className={window.location.pathname === "/" ? "active" : ""}>
-      <Link to="/">Home \ Página de inicio</Link>
+      <Link to="/">Home</Link>
     </li>
     <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
-      <Link to="/tips">Health Tips \ Consejos de Salud </Link>
+      <Link to="/tips">Health Tips</Link>
     </li>
     <li className={window.location.pathname === "/otc" ? "active" : ""}>
-      <Link to="/otc">Over-The-Counter Medication \ Medicamentos de Venta Libre</Link>
+      <Link to="/otc">OTC Medication</Link>
     </li>
     <li className={window.location.pathname === "/medication" ? "active" : ""}>
-      <Link to="/medication">Medication \ Medicación</Link>
+      <Link to="/medication">Medication</Link>
     </li>
+    <li className={window.location.pathname === "/login" ? "active" : ""}>
+      <Link to="login">Login / Sign Up</Link>
+    </li>
+   
     
   </ul>;
 
