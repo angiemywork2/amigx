@@ -14,6 +14,15 @@ import ReactDOM from 'react-dom';
 // import Auth from './Auth/Auth.js';
 import { Button } from 'react-bootstrap';
 
+import Jumbotron from "../components/Jumbotron";
+//import API from "../utils/API";
+import { Link } from "react-router-dom";
+import { Col, Row, Container } from "../components/Grid";
+import { List, ListItem } from "../components/List";
+import { Input, TextArea, FormBtn } from "../components/Form";
+
+import Disclaimer from "../components/Disclaimer";
+
 
 
 
@@ -31,12 +40,43 @@ var Menu = reactNavBar.Menu;
 
 
 const Home = () =>
-  <div>
-    <h1><center>Welcome to Mi MediAmig<sub>X</sub></center></h1>
-    <center><p>
-      Mi MediAmig<sub>X</sub>
-    </p></center>
-  </div>;
+
+
+	
+
+   <Container fluid>
+   <div>
+    <h1><center>Welcome to Mi Medi Amig<sub>x</sub></center></h1>
+   </div>
+    <Row>
+      <Col size ="md-10, col-md-offset-1">
+        <Jumbotron>
+          <div className="row">
+            <div className="col-md-6, col-md-offset-1">
+              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">English</button>
+					</div>
+					</div><br />
+			
+				<div className="row">
+            <div className="col-md-6, col-md-offset-1">
+              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">Spanish</button>
+              <div id="demo" className="collapse">
+                <div className="thumbnail">  
+                 <div className="caption, text-center">
+                      <p>Here is an example of a medical prescription</p>
+                  </div>
+                  <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Jumbotron>
+      </Col>
+    </Row>
+    <Row>
+      <Disclaimer></Disclaimer>
+    </Row>
+  </Container>
 
 export default Home;
 
