@@ -11,7 +11,7 @@ import Disclaimer from "../components/Disclaimer";
 const Medication = () =>
   <Container fluid>
     <Row>
-      <Col size ="md-10, col-md-offset-1">
+      <Col size ="md-10">
         <Jumbotron>
           <h1 className="text-center">Medication Translator</h1>
           <Row>
@@ -42,6 +42,8 @@ const Medication = () =>
             </div>
           </div>
         </Jumbotron>
+      </Col>
+      </Row>
 
 
         <Row>
@@ -66,8 +68,9 @@ const Medication = () =>
             </Jumbotron>
           </Col>
         </Row>
-        
-      </Col>
+
+    <Row>
+      <Disclaimer/>
     </Row>
   </Container>
 

@@ -11,7 +11,8 @@ import Disclaimer from "../components/Disclaimer";
 const Tips = () =>
   <Container fluid>
     <Row>
-    <Col size ="md-10, col-md-offset-1">
+    <Col size ="md-10
+    ">
       <h1>Health Tips</h1>
       <Jumbotron>
         <div className="panel-group" id="accordion">
