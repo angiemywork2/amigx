@@ -21,7 +21,7 @@ const otc = () =>
   <Container fluid>
     <Row>
       <Col size ="md-10, col-md-offset-1">
-        <h1>Quick List of Over-The-Counter Medication</h1>
+        <h1>Quick Reference List of Over-The-Counter Medication</h1>
           <Jumbotron>
             <div className="panel-group" id="accordion">
               <p>Listed are commonly used over the counter medications.  
@@ -53,64 +53,55 @@ const otc = () =>
                 </div>
 
 
-              <h1>Benadryl (Diphenhydramine: an Antihistamine)</h1>
+              <h3>Benadryl (Diphenhydramine: an Antihistamine)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
-                    <h1 className= "panel-title">
+                    <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h2>About Benadryl <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                        <h4>About Benadryl <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
-                    </h1>
+                    </h3>
                   </div>
                 </div>
 
 
-              <h1>Advil, Motrin (Ibuprofen)</h1>
+              <h3>Mucinex (An Expectorant called Guaifenesin)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
-                    <h1 className= "panel-title">
+                    <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h2>About Advil, Motrin (Ibuprofen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                        <h4>About Mucinex <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
-                    </h1>
+                    </h3>
                   </div>
                 </div>
 
 
-              <h1>Ibuprofen (Advil, Motrin)</h1>
+              <h3>Sudafed (Pseudoephedrine, a decongestant)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
-                    <h1 className= "panel-title">
+                    <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                        <h4>About Sudafed <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
-                    </h1>
+                    </h3>
                   </div>
                 </div>
 
 
-              <h1>Acetaminophen (Tylenol)</h1>
+              <h3> Tylenol (Acetaminophen)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
-                    <h1 className= "panel-title">
+                    <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                        <h4>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
-                    </h1>
+                    </h3>
                   </div>
                 </div>
 
 
-               <h1>Acetaminophen (Tylenol)</h1>
-                <div className="panel panel-default">
-                  <div className="panel-heading">
-                    <h1 className= "panel-title">
-                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
-                      </a>
-                    </h1>
-                  </div>
-                </div>
+              
 
             </div>
           </Jumbotron>
