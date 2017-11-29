@@ -5,7 +5,7 @@ const prescriptionSchema = new Schema({
   PharmName: { type: String, required: true },
   PharmAddress: { type: String, required: true },
   PharmPhone: {type: String, required:true},
-  PharmDrugNumb: {type: String, required:true},
+  PharmDrugNum: {type: String, required:true},
   PharmFillDate: {type: String, require: true},
   DocName: {type: String, required: true},
   PatientName: {type: String, required:true},
@@ -16,6 +16,6 @@ const prescriptionSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Book = mongoose.model("Book", bookSchema);
+const Prescription = mongoose.model("Prescription", bookSchema);
 
-module.exports = Book;
+module.exports = Prescription;
