@@ -48,18 +48,20 @@ const Home = () =>
    <div>
     <h1><center>Welcome to Mi Medi Amig<sub>x</sub></center></h1>
    </div>
-    <Row>
+
+	  <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
           <div className="row">
-            <div className="col-md-6, col-md-offset-1">
-              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">English</button>
+            <div className="text-center">
+              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
 					</div>
 					</div><br />
 			
 				<div className="row">
-            <div className="col-md-6, col-md-offset-1">
-              <button type="button" className="btn btn-info" data-toggle="collapse" data-target="#demo">Spanish</button>
+            <div className="text-center">
+              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">Español
+							</button>
               <div id="demo" className="collapse">
                 <div className="thumbnail">  
                  <div className="caption, text-center">

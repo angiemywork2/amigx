@@ -1,16 +1,126 @@
-import React from "react";
+import React, { Component } from "react";
+import DeleteBtn from "../components/DeleteBtn";
+import Jumbotron from "../components/Jumbotron";
+import { Link } from "react-router-dom";
+import { Col, Row, Container } from "../components/Grid";
+import { List, ListItem } from "../components/List";
+import { Input, TextArea, FormBtn } from "../components/Form";
+import Disclaimer from "../components/Disclaimer";
+import './otc.css';
+
+// Benadryl
+// Motrin
+// Mucinex
+// Sudafed
+// Tylenol
+
+
 
 const otc = () =>
-  <div>
-    <h1>Over-The-Counter Medication</h1>
-    <p>
-      Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer
-      gravida dui mauris, ut interdum nunc egestas sed. Aenean sed mollis diam.
-      Nunc aliquet risus ac finibus porta. Nam quis arcu non lectus tincidunt
-      fermentum. Suspendisse aliquet orci porta quam semper imperdiet. Praesent
-      euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-      diam, sit amet facilisis lectus blandit at.
-    </p>
-  </div>;
+
+  <Container fluid>
+    <Row>
+      <Col size ="md-10, col-md-offset-1">
+        <h1>Quick List of Over-The-Counter Medication</h1>
+          <Jumbotron>
+            <div className="panel-group" id="accordion">
+              <p>Listed are commonly used over the counter medications.  
+                  Please consult with your doctor before taking any medication!
+              </p>
+             
+
+              <h3><strong>Advil | Motrin (Ibuprofen)</strong></h3>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h3 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h4>About Advil | Motrin (Ibuprofen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+
+
+              <h3>Aleve (Naproxen)</h3>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h3 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h4>About Aleve (Naproxen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+
+
+              <h1>Benadryl (Diphenhydramine: an Antihistamine)</h1>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h1 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h2>About Benadryl <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                      </a>
+                    </h1>
+                  </div>
+                </div>
+
+
+              <h1>Advil, Motrin (Ibuprofen)</h1>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h1 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h2>About Advil, Motrin (Ibuprofen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                      </a>
+                    </h1>
+                  </div>
+                </div>
+
+
+              <h1>Ibuprofen (Advil, Motrin)</h1>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h1 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                      </a>
+                    </h1>
+                  </div>
+                </div>
+
+
+              <h1>Acetaminophen (Tylenol)</h1>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h1 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                      </a>
+                    </h1>
+                  </div>
+                </div>
+
+
+               <h1>Acetaminophen (Tylenol)</h1>
+                <div className="panel panel-default">
+                  <div className="panel-heading">
+                    <h1 className= "panel-title">
+                      <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
+                        <h2>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
+                      </a>
+                    </h1>
+                  </div>
+                </div>
+
+            </div>
+          </Jumbotron>
+      </Col>
+    </Row>
+    <Row>
+      <Disclaimer></Disclaimer>
+    </Row>
+ </Container>
+
+
 
 export default otc;
