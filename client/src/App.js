@@ -8,11 +8,13 @@ import Tips from "./pages/Tips";
 import otc from "./pages/otc";
 import Login from "./pages/Login";
 import Medication from "./pages/Medication";
+import MedMinder from "./pages/MedMinder";
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
-
+import Mapp from "./components/Mapp";
+import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
-
+import moment from 'moment';
 import Disclaimer from "../src/components/Disclaimer";
 
 
@@ -41,7 +43,7 @@ const App = () =>
         <Route exact path="/otc" component={otc} />
         <Route exact path="/Medication" component={Medication} />
         <Route exact path="/Login" component={Login} />       
-             
+        <Route exact path="/MedMinder" component={MedMinder} />     
     </div>
   </Router>;
 

@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "moment": "^2.19.2",
     "body-parser": "^1.18.2",
     "create-react-class": "^15.6.2",
     "express": "^4.16.2",
     "material-ui": "^0.19.4",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
+    "react-redux": "^5.0.6",
     "react-menu": "0.0.10",
     "react-menus": "^2.0.8",
     "react-nav-bar": "^0.6.5",
@@ -17,7 +19,9 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-tap-event-plugin": "^3.0.2",
-    "validator": "^9.1.1"
+    "validator": "^9.1.1",
+     "redux": "^3.7.2",
+    "sfcookies": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
