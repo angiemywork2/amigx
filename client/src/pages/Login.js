@@ -3,20 +3,49 @@ import React, { Component } from 'react';
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
 import { Button } from 'react-bootstrap';
+import Auth from '../Auth/auth.js';
 
 
+class Login extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
+  }
 
-const Login = () =>
-  <div>
-    <h1>Welcome to the login page</h1>
-    <p>
-      Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer
-      gravida dui mauris, ut interdum nunc egestas sed. Aenean sed mollis diam.
-      Nunc aliquet risus ac finibus porta. Nam quis arcu non lectus tincidunt
-      fermentum. Suspendisse aliquet orci porta quam semper imperdiet. Praesent
-      euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-      diam, sit amet facilisis lectus blandit at.
-    </p>
-  </div>;
+  login() {
+    this.props.auth.login();
+  }
+
+  logout() {
+    this.props.auth.logout();
+  }
+
+  render() {
+    const { isAuthenticated } = this.props.auth;
+
+    return (
+      <div>
+            {
+              !isAuthenticated() && (
+                  <button onClick={this.login.bind(this)}
+                  >
+                    Log In
+                  </button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <button onClick={this.logout.bind(this)}
+                  >
+                    Log Out
+                  </button>
+                )
+            }
+          
+      </div>
+    );
+  }
+}
+
+  
 
 export default Login;
