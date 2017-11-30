@@ -73,6 +73,9 @@ var Menu = reactNavBar.Menu;
 // import Auth from './Auth/Auth';
 // import history from './history';
 
+//MERGE THE BELWO INTO APP.JS
+//
+
 // const auth = new Auth();
 
 // const handleAuthentication = (nextState, replace) => {
