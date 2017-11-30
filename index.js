@@ -1,53 +1,22 @@
-import React, { Component } from "react";
+import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import App from './App';
-import * as ReactIntl from 'react-intl';
-import { IntlProvider, addLocaleData } from 'react-intl';
-import intlEN from 'react-intl/locale-data/en';
-import intlES from 'react-intl/locale-data/es';
-import intlMessagesES from './components/i18n/locales/es.json';
-import intlMessagesEN from './components/i18n/locales/en.json';
-import EnglishBtn from './components/EnglishBtn/EnglishBtn';
-import SpanishBtn from './components/SpanishBtn/SpanishBtn';
 import registerServiceWorker from './registerServiceWorker';
 
-console.log("addLocaleData: ",addLocaleData);
-addLocaleData([...intlEN, ...intlES]);
-console.log("IntlProvider: ", IntlProvider);
+const express = require('express');
 
-let i18nConfig = {
-    locale: 'en',
-    messages: intlMessagesEN
-};
+const app = express();
+// tell the app to look for static files in these directories
+app.use(express.static('./server/static/'));
+app.use(express.static('./client/dist/'));
 
-let changeLanguage = (lang) => {
-    i18nConfig = { locale: lang, messages: intlMessagesEN };
-    return i18nConfig;
-};
+// start the server
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000 or http://127.0.0.1:3000');
+});
 
-let onChangeLanguage = (lang) =>{
-        switch (lang) {
-            case 'ES': i18nConfig.messages = intlMessagesES; break;
-            case 'EN': i18nConfig.messages = intlMessagesEN; break;
-            default: i18nConfig.messages = intlMessagesEN; break;
-        }
-        this.setState({ locale: lang });
-        i18nConfig.locale = this.state.locale;
-};
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
 
 
-ReactDOM.render(
-	
-	    
-	        <IntlProvider key={ i18nConfig.locale } locale={ i18nConfig.locale }  messages={ i18nConfig.messages }>
-	            <div>
-	                <SpanishBtn onChangeLanguage={this.onChangeLanguage} />
-	                <EnglishBtn onChangeLanguage={this.onChangeLanguage} />
-	                <App/>
-	                
-	            </div>
-	            
-	        </IntlProvider>,
-	         document.getElementById('root')
-	    );
-	
