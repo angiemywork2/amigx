@@ -1,5 +1,7 @@
 import auth0 from 'auth0-js';
 import history from '../history';
+const ID_TOKEN_KEY = 'id_token';
+const ACCESS_TOKEN_KEY = 'access_token';
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
@@ -59,5 +61,25 @@ export default class Auth {
     let expiresAt = JSON.parse(localStorage.getItem('expires_at'));
     return new Date().getTime() < expiresAt;
   }
+
+//   isLoggedIn() {
+//   const idToken = getIdToken();
+//   return !!idToken && !isTokenExpired(idToken);
+//   }
+
+// componentDidMount() {
+//     setAccessToken();
+//     setIdToken();
+//     window.location.href = "/";
+//   }
+// Get and store id_token in local storage
+// setIdToken() {
+//   let idToken = getParameterByName('id_token');
+//   localStorage.setItem(ID_TOKEN_KEY, idToken);
+// }
+
+// getIdToken() {
+//   return localStorage.getItem(ID_TOKEN_KEY);
+// }
 
 }

@@ -9,7 +9,10 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 import Disclaimer from "../components/Disclaimer";
 import API from "../utils/API";
 import Auth from '../Auth/auth';
-
+import {Route, Switch, Redirect } from "react-router-dom";
+import decode from 'jwt-decode';
+import Login from "./Login";
+import {isLoggedIn} from "../Auth/auth.js";
 
 const auth = new Auth();
 
@@ -20,8 +23,81 @@ const handleAuthentication = (nextState, replace) => {
   }
 }
 
+// class chkLogin extends Component {
+//   goTo(route) {
+//     this.props.history.replace(`/${route}`)
+//   }
+
+  
+//   render() {
+//     const { isAuthenticated } = this.props.auth;
+
+//     return (
+//       <div>
+//             {
+//               !isAuthenticated() && (
+//                   <button onClick={this.login.bind(this)}
+//                   >
+//                     Log In
+//                   </button>
+//                 )
+//             }
+//             {
+//               isAuthenticated() && (
+//                   <button onClick={this.logout.bind(this)}
+//                   >
+//                     Log Out
+//                   </button>
+//                 )
+//             }
+          
+//       </div>
+//     );
+//   }
+// }
+
+
+const checkAuth = () => {
+  const token = localStorage.getItem('token');
+  const refreshToken = localStorage.getItem('refreshToken');
+  if (!token || !refreshToken) {
+    return false;
+  }
+
+  try {
+    // { exp: 12903819203 }
+    const { exp } = decode(refreshToken);
+
+    if (exp < new Date().getTime() / 1000) {
+      return false;
+    }
+
+  } catch (e) {
+    return false;
+  }
+
+  return true;
+}
+
+const AuthRoute = ({ component: Component, ...rest }) => (
+  <Route {...rest} render={props => (
+    checkAuth() ? (
+      <Component {...props} />
+    ) : (
+        <Redirect to={{ Login: '/login' }} />
+      )
+  )} />
+)
+
+
+
+
+
+
+
 
 class Medication extends Component {
+
   state = {
     prescriptions: [],
     PharmName: "",
