@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 
@@ -38,30 +37,58 @@ var Menu = reactNavBar.Menu;
           
 //           <ul id="nav-mobile" class="right hide-on-med-and-down">
 
+// What I think will work to link language pages to buttons
+// const isSpanish = () => {
+//     state = {
+//       spanish: true,
+//     }
+//   }
+
+// const Language = () => {
+
+//     getInitialState() => {
+//         return {
+//             isEnglish: (input English routes here)
+//         };
+//     },
+
+//     isSpanish() => {
+
+//         this.setState({isSpanish: (Spanish routes go here)});
+//     },
+
+//     render: function() {
+//         return(
+
+//             <{this.state.isSpanish} onClick={this.isSpanish.bind(this)} />
+//         );
+//     }
+// };
+
+// module.exports = Language;
+
+
 
 const Home = () =>
-
-
-	
 
    <Container fluid>
    <div>
     <h1><center>Welcome to Mi Medi Amig<sub>x</sub></center></h1>
    </div>
 
-	  <Row>
+    <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
           <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
-					</div>
-					</div><br />
-			
-				<div className="row">
+          </div>
+          </div><br />
+      
+        <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">Español
-							</button>
+              </button>
               <div id="demo" className="collapse">
                 <div className="thumbnail">  
                  <div className="caption, text-center">

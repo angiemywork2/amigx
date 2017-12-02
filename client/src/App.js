@@ -10,7 +10,9 @@ import otc from "./pages/otc";
 import otcEs from "./pages/otcEs";
 import Login from "./pages/Login";
 import Medication from "./pages/Medication";
+import MedicationEs from "./pages/MedicationEs";
 import MedMinder from "./pages/MedMinder";
+import MedMinderEs from "./pages/MedMinderEs";
 import Navbar from 'react-navbar';
 import ReactDOM from 'react-dom';
 import Mapp from "./components/Mapp";
@@ -82,9 +84,11 @@ const App = () =>
         <Route exact path="/otc" component={otc} />
         <Route exact path="/otcEs" component={otcEs} />
         <Route exact path="/Medication" component={Medication} />
+        <Route exact path="/MedicationEs" component={MedicationEs} />
         <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/MedMinder" component={MedMinder} /> 
+        <Route exact path="/MedMinderEs" component={MedMinderEs} /> 
         <AuthRoute exact path="/auth" component={Auth} />
          <Route path="/callback" render={(props) => {
             handleAuthentication(props);
