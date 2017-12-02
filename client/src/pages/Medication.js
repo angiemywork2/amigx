@@ -33,13 +33,13 @@ class Medication extends Component {
     API.getPrescriptions()
       .then(res => 
         this.setState({ prescriptions: res.data, PharmName:"" ,
-    PharmAddress:"",  PharmPhone:"", PharmDrugNum:"", PharmFillDate:"", DocName:"", PatientName:"", DrugInstruct:"", DrugName:"", DrugRefill:"", DrugUseByDate:"" })
+    PharmAddress:"" })
         )
       .catch(err => console.log(err));
   };
   
   deletePrescription = id => {
-    API.deletePrescriptions(id)
+    API.deletePrescription(id)
       .then(res => this.loadPrescriptions())
       .catch(err => console.log(err));
   };
@@ -194,7 +194,7 @@ class Medication extends Component {
                             {prescription.PatientName} by {prescription.DrugName}
                           </strong>
                         </Link>
-                        <DeleteBtn onClick={() => this.deletePrescriptions(prescription._id)} />
+                        <DeleteBtn onClick={() => this.deletePrescription(prescription._id)} />
                       </ListItem>
                     ))}
                   </List>
