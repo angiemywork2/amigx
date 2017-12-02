@@ -9,9 +9,19 @@ const Navpills = () =>
     <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
       <Link to="/tips">Health Tips</Link>
     </li>
+    <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
+      <Link to="/TipsEs">Consejos de Salud</Link>
+    </li>
+
     <li className={window.location.pathname === "/otc" ? "active" : ""}>
       <Link to="/otc">OTC Medication</Link>
     </li>
+    <li className={window.location.pathname === "/otcEs" ? "active" : ""}>
+      <Link to="/otcEs">Medicamento de venta libre</Link>
+    </li>
+
+    
+
     <li className={window.location.pathname === "/medication" ? "active" : ""}>
       <Link to="/medication">Medication</Link>
     </li>

@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import Navpills from "./components/Navpills";
 import Home from "./pages/Home";
 import Tips from "./pages/Tips";
+import TipsEs from "./pages/TipsEs";
 import otc from "./pages/otc";
+import otcEs from "./pages/otcEs";
 import Login from "./pages/Login";
 import Medication from "./pages/Medication";
 import MedMinder from "./pages/MedMinder";
@@ -76,7 +78,9 @@ const App = () =>
       <Navpills />
         <Route exact path="/" component={Home} />
         <Route exact path="/Tips" component={Tips} />
+        <Route exact path="/TipsEs" component={TipsEs} />
         <Route exact path="/otc" component={otc} />
+        <Route exact path="/otcEs" component={otcEs} />
         <Route exact path="/Medication" component={Medication} />
         <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 

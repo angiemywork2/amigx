@@ -14,85 +14,82 @@ import decode from 'jwt-decode';
 import Login from "./Login";
 import {isLoggedIn} from "../Auth/auth.js";
 
-const auth = new Auth();
+// const auth = new Auth();
 
 
-const handleAuthentication = (nextState, replace) => {
-  if (/access_token|id_token|error/.test(nextState.location.hash)) {
-    auth.handleAuthentication();
-  }
-}
-
-// class chkLogin extends Component {
-//   goTo(route) {
-//     this.props.history.replace(`/${route}`)
-//   }
-
-  
-//   render() {
-//     const { isAuthenticated } = this.props.auth;
-
-//     return (
-//       <div>
-//             {
-//               !isAuthenticated() && (
-//                   <button onClick={this.login.bind(this)}
-//                   >
-//                     Log In
-//                   </button>
-//                 )
-//             }
-//             {
-//               isAuthenticated() && (
-//                   <button onClick={this.logout.bind(this)}
-//                   >
-//                     Log Out
-//                   </button>
-//                 )
-//             }
-          
-//       </div>
-//     );
+// const handleAuthentication = (nextState, replace) => {
+//   if (/access_token|id_token|error/.test(nextState.location.hash)) {
+//     auth.handleAuthentication();
 //   }
 // }
 
-
-const checkAuth = () => {
-  const token = localStorage.getItem('token');
-  const refreshToken = localStorage.getItem('refreshToken');
-  if (!token || !refreshToken) {
-    return false;
+class chkLogin extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
   }
 
-  try {
-    // { exp: 12903819203 }
-    const { exp } = decode(refreshToken);
+  
+  render() {
+    const { isAuthenticated } = this.props.auth;
 
-    if (exp < new Date().getTime() / 1000) {
-      return false;
-    }
-
-  } catch (e) {
-    return false;
+    return (
+      <div>
+            {
+              !isAuthenticated() && (
+                  <button onClick={this.login.bind(this)}
+                  >
+                    Log In
+                  </button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <button onClick={this.logout.bind(this)}
+                  >
+                    Log Out
+                  </button>
+                )
+            }
+          
+      </div>
+    );
   }
-
-  return true;
 }
 
-const AuthRoute = ({ component: Component, ...rest }) => (
-  <Route {...rest} render={props => (
-    checkAuth() ? (
-      <Component {...props} />
-    ) : (
-        <Redirect to={{ Login: '/login' }} />
-      )
-  )} />
-)
 
 
 
+// const checkAuth = () => {
+//   const token = localStorage.getItem('token');
+//   const refreshToken = localStorage.getItem('refreshToken');
+//   if (!token || !refreshToken) {
+//     return false;
+//   }
 
+//   try {
+//     // { exp: 12903819203 }
+//     const { exp } = decode(refreshToken);
 
+//     if (exp < new Date().getTime() / 1000) {
+//       return false;
+//     }
+
+//   } catch (e) {
+//     return false;
+//   }
+
+//   return true;
+// }
+
+// const AuthRoute = ({ component: Component, ...rest }) => (
+//   <Route {...rest} render={props => (
+//     checkAuth() ? (
+//       <Component {...props} />
+//     ) : (
+//         <Redirect to={{ Login: '/login' }} />
+//       )
+//   )} />
+// )
 
 
 
