@@ -8,6 +8,18 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import Disclaimer from "../components/Disclaimer";
 import API from "../utils/API";
+import Auth from '../Auth/auth';
+
+
+const auth = new Auth();
+
+
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
+
 
 class Medication extends Component {
   state = {

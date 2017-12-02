@@ -118,8 +118,8 @@ export default Home;
 //   return (
 //     <Router history={history} component={App}>
 //       <div>
-//         <Route path="/" render={(props) => <App auth={auth} {...props} />} />
-//         <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
+//       GOES IN LOGIN.JS ->  <Route path="/LOGIN" render={(props) => <App auth={auth} {...props} />} />
+//         REMOVE - <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
 //         <Route path="/callback" render={(props) => {
 //           handleAuthentication(props);
 //           return <Callback {...props} /> 

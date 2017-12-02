@@ -16,6 +16,9 @@ import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
 import moment from 'moment';
 import Disclaimer from "../src/components/Disclaimer";
+import Auth from './Auth/auth.js';
+import Callback from './Callback/Callback';
+
 
 
 
@@ -33,7 +36,13 @@ var Menu = reactNavBar.Menu;
           
 //           <ul id="nav-mobile" class="right hide-on-med-and-down">
 
+const auth = new Auth();
 
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
 
 const App = () =>
   <Router>
@@ -43,8 +52,12 @@ const App = () =>
         <Route exact path="/Tips" component={Tips} />
         <Route exact path="/otc" component={otc} />
         <Route exact path="/Medication" component={Medication} />
-        <Route exact path="/Login" component={Login} />       
-        <Route exact path="/MedMinder" component={MedMinder} />     
+        <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
+        <Route exact path="/MedMinder" component={MedMinder} /> 
+         <Route path="/callback" render={(props) => {
+            handleAuthentication(props);
+            return <Home {...props} /> 
+          }}/>    
     </div>
   </Router>;
 
