@@ -98,4 +98,5 @@ function mapStateToProps(state) {
   }
 }
 
+
 export default connect(mapStateToProps, { addReminder, deleteReminder, clearReminders })(Mapp);

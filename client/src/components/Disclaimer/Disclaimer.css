@@ -1,15 +1,32 @@
-.footer {
-  min-height: 150px;
-  background: orange;
-  position: relative;
-  overflow: auto;
+.footer{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 125px;
+  width: 100%;
+  background-color: #ff6600;
+  font: normal 12px sans-serif;
+  padding: 10px 25px;
 }
 
-.footer p {
-  color: black;
-  position: absolute;
+.footer p{
+  color: #d9d9d9;
+  position: center;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 3px;
+  
+}
+
+.footer-company-name {
+  font: normal 15px Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@media (max-width: 600px) {
+  .footer .footer p .footer-company-name {
+    margin: 0 auto 20px;
+  }
+   
 }
