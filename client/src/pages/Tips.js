@@ -244,7 +244,6 @@ const Tips = () =>
                 <p>
                   <ul>
                     <li>Diseases of the heart and srokes rank as the top killer of Latino Americans</li>
-                    <li></li>
                   </ul>
                 </p>
               </div>

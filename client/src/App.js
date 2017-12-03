@@ -79,16 +79,24 @@ const App = () =>
     <div>
       <Navpills />
         <Route exact path="/" component={Home} />
-        <Route exact path="/Tips" component={Tips} />
+
+       <Route exact path="/Tips" component={Tips} />
         <Route exact path="/TipsEs" component={TipsEs} />
-        <Route exact path="/otc" component={otc} />
+        
         <Route exact path="/otcEs" component={otcEs} />
+
         <Route exact path="/Medication" component={Medication} />
         <Route exact path="/MedicationEs" component={MedicationEs} />
         <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/MedMinder" component={MedMinder} /> 
+        <Route exact path="/MedMinderEs" component={MedMinderEs} />         
+        <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
+        <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
+        <Route exact path="/MedicationEs" render={(props) => <Login auth={auth} {...props} />} /> 
+        
         <Route exact path="/MedMinderEs" component={MedMinderEs} /> 
+
         <AuthRoute exact path="/auth" component={Auth} />
          <Route path="/callback" render={(props) => {
             handleAuthentication(props);

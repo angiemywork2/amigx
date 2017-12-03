@@ -7,6 +7,7 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import Disclaimer from "../components/Disclaimer";
 import './otc.css';
+import DisclaimerEs from "../components/DisclaimerEs";
 
 // Benadryl
 // Motrin
@@ -51,7 +52,10 @@ const otcEs = () =>
                 <div id="collapsea1" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
+
                     Advil | Motrin se usa para:
+                    Advil | Motrin Advil se usa para:
+
                       <ul>
                         <li>Reductor de fiebre</li>
                         <li>Aliviar dolores de cabeza</li>
@@ -266,10 +270,10 @@ const otcEs = () =>
       </Col>
     </Row>
     <Row>
-      <Disclaimer></Disclaimer>
+      <DisclaimerEs></DisclaimerEs>
     </Row>
  </Container>
 
 
-
 export default otcEs;
+
