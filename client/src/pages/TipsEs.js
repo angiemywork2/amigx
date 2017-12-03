@@ -145,22 +145,24 @@ const TipsEs = () =>
             </div>
             <div id="collapsea6" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>Sitios web en inglés
+                <p>Enlaces en Inglés
                   <ul>
                     <li><a href="https://minorityhealth.hhs.gov/omh/browse.aspx?lvl=4&lvlid=63">https://minorityhealth.hhs.gov/omh/browse.aspx?lvl=4&lvlid=63</a></li>
                     <li><a href="http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/">http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/</a></li>
                     <li><a href="http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg"></a>http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg</li>
-                    <li><p><img src="http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg" alt="Infographic on Diabetic Eye Disease Among Hispanics/Latinos" border="0" width="1545" height="1000" /></p></li>
-                    <li><a href=""></a></li>
+        
                   </ul>
                 </p>
-                <p>Sitios web en español
+                <p>Enlaces en Español
                   <ul>
                     <li><a href="https://infografiasencastellano.files.wordpress.com/2012/06/ladiabetes.jpg">https://infografiasencastellano.files.wordpress.com/2012/06/ladiabetes.jpg</a></li>
                     <li><a href="http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/">http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/</a></li>
-                    <li><a href="http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg"></a>http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg</li>
-                   
-                    <li><a href=""></a></li>
+                    <li>
+                      <a href= "http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg">
+                        <img style= {{height: 100}} src="http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg" />
+
+                      </a>
+                      </li>
                   </ul>
                 </p>
               </div>
@@ -269,7 +271,18 @@ const TipsEs = () =>
             </div>
             <div id="collapseb5" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p></p>
+                <p>Enlaces en Inglés</p>
+                <ul>
+                  <li><a href="http://www.your-heart-health.com/en-US/heart-disease-facts/hispanic-americans.html">http://www.your-heart-health.com/en-US/heart-disease-facts/hispanic-americans.html</a></li>
+                  <li><a href="https://www.medicinenet.com/high_blood_pressure_hypertension/article.htm#what_causes_high_blood_pressure">https://www.medicinenet.com/high_blood_pressure_hypertension/article.htm#what_causes_high_blood_pressure</a></li>
+                  <li><a href="https://www.medicinenet.com/high_blood_pressure_hypertension/article.htm#what_is_high_blood_pressure">https://www.medicinenet.com/high_blood_pressure_hypertension/article.htm#what_is_high_blood_pressure</a></li>
+                  
+                </ul>
+                <p>Enlaces en Español</p>
+                <ul>
+                  <li><a href="https://medlineplus.gov/spanish/ency/article/000468.htm">https://medlineplus.gov/spanish/ency/article/000468.htm</a></li>
+                  <li><a href="http://www.cuidateplus.com/enfermedades/enfermedades-vasculares-y-del-corazon/hipertension-arterial.html">http://www.cuidateplus.com/enfermedades/enfermedades-vasculares-y-del-corazon/hipertension-arterial.html</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -389,7 +402,21 @@ const TipsEs = () =>
             </div>
             <div id="collapsec5" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p></p>
+                <p>Enlaces en Inglés</p>
+                <ul>
+                  <li><a href="https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview">https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview</a></li>
+                  <li><a href="www.webmd.com/cholesterol-management/tc/high-cholesterol-symptoms">www.webmd.com/cholesterol-management/tc/high-cholesterol-symptoms</a></li>
+                  <li><a href="https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview">https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview</a></li>
+                  <li><a href="https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview">https://www.webmd.com/cholesterol-management/tc/high-cholesterol-overview</a></li>
+                </ul>
+                <p>Enlaces en Español</p>
+                  <ul>
+                    <li><a href="https://www.plusesmas.com/salud/colesterol/cuantos_tipos_de_colesterol_existen/3065.html">https://www.plusesmas.com/salud/colesterol/cuantos_tipos_de_colesterol_existen/3065.html</a></li>
+                    <li><a href="https://www.mayoclinic.org/es-es/diseases-conditions/high-blood-cholesterol/symptoms-causes/syc-20350800">https://www.mayoclinic.org/es-es/diseases-conditions/high-blood-cholesterol/symptoms-causes/syc-20350800</a></li>
+                    <li><a href="https://mejorconsalud.com/cuales-son-los-sintomas-que-advierten-el-colesterol-alto/
+                    ">https://mejorconsalud.com/cuales-son-los-sintomas-que-advierten-el-colesterol-alto/
+                    </a></li>
+                  </ul>
               </div>
             </div>
           </div>
@@ -527,7 +554,20 @@ const TipsEs = () =>
             </div>
             <div id="collapsed5" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p></p>
+                <p>Enlaces en Inglés</p>
+                  <ul>
+                    <li><a href="https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health ">https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health </a></li>
+                    <li><a href="https://www.mayoclinic.org/diseases-conditions/mental-illness/basics/symptoms/con-20033813">https://www.mayoclinic.org/diseases-conditions/mental-illness/basics/symptoms/con-20033813</a></li>
+                    <li><a href="https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health">https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health</a></li>
+                    <li><a href="https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health">https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health</a></li>
+                    <li><a href="https://www.mentalhealth.gov/basics/what-is-mental-health/index.html">https://www.mentalhealth.gov/basics/what-is-mental-health/index.html</a></li>
+                  </ul>
+                <p>Enlaces en Español</p>
+                  <ul>
+                    <li><a href="https://medlineplus.gov/spanish/mentalhealth.html">https://medlineplus.gov/spanish/mentalhealth.html</a></li>
+                    <li><a href="https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health/La-salud-mental-en-la-comunidad-latina">https://www.nami.org/Find-Support/Diverse-Communities/Latino-Mental-Health/La-salud-mental-en-la-comunidad-latina</a></li>
+                    <li><a href="http://www.who.int/features/factfiles/mental_health/es/">http://www.who.int/features/factfiles/mental_health/es/</a></li>
+                  </ul>
               </div>
             </div>
           </div>
@@ -541,7 +581,7 @@ const TipsEs = () =>
           <div className="panel panel-default">
             <div className="panel-heading">
               <h1 className="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapsee1">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapsee1">
                   <h2>¿Que es la Obesidad? <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2> 
                 </a>
               </h1>
@@ -562,7 +602,7 @@ const TipsEs = () =>
           <div className="panel panel-default">
             <div className="panel-heading">
               <h1 className="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapsee2">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapsee2">
                   <h2>Síntomas <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
@@ -581,7 +621,7 @@ const TipsEs = () =>
           <div className="panel panel-default">
             <div className="panel-heading">
               <h1 className="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapsee3">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapsee3">
                   <h2>Problemas de Salud <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
@@ -602,7 +642,7 @@ const TipsEs = () =>
           <div className="panel panel-default">
             <div className="panel-heading">
               <h1 className="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapsee4">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapsee4">
                   <h2>La Importancia para la Comunidad Latina<span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
@@ -611,7 +651,9 @@ const TipsEs = () =>
               <div className="panel-body">
                 <p>
                   <ul>
-                    <li>Among </li>
+                    <li>La obesidad aumenta el riesgo de todos los tipos de muertes.</li>
+                    <li>La obesidad occurre frecuentemente en las comunidades latinas por falta de acceso a comidas saludabless a precios accesibles.</li>
+                    <li>Los latinos tienden a ser menos activos al no tener acceso a lugares seguros para jugar o hacer actividades fisicas.</li>
                   </ul>
                 </p>
               </div>
@@ -621,14 +663,26 @@ const TipsEs = () =>
           <div className="panel panel-default">
             <div className="panel-heading">
               <h1 className="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapsee5">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapsee5">
                   <h2>Encuentra más información <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h2>
                 </a>
               </h1>
             </div>
             <div id="collapsee5" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p></p>
+                <p>Enlaces en Inglés</p>
+                  <ul>
+                    <li><a href="https://stateofobesity.org/disparities/latinos/">https://stateofobesity.org/disparities/latinos/</a></li>
+                    <li><a href="www.healthdirect.gov.au/obesity-symptoms">www.healthdirect.gov.au/obesity-symptoms</a></li>
+                    <li><a href="www.medlineplus.gov/obesity.html">www.medlineplus.gov/obesity.html</a></li>
+                    <li><a href="https://medlineplus.gov/obesity.html">https://medlineplus.gov/obesity.html</a></li>
+                  </ul>
+                <p>Enlaces en Español</p>
+                  <ul>
+                    <li><a href="https://medlineplus.gov/spanish/obesity.html">https://medlineplus.gov/spanish/obesity.html</a></li>
+                    <li><a href="http://www.who.int/mediacentre/factsheets/fs311/es/">http://www.who.int/mediacentre/factsheets/fs311/es/</a></li>
+                    <li><a href="http://www.cuidateplus.com/enfermedades/digestivas/obesidad.html">http://www.cuidateplus.com/enfermedades/digestivas/obesidad.html</a></li>
+                  </ul>
               </div>
             </div>
           </div>
