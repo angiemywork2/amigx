@@ -6,15 +6,15 @@ export default {
     return axios.get("/api/prescriptions");
   },
   // Gets the book with the given id
-  getPrescriptions: function(id) {
+  getPrescription: function(id) {
     return axios.get("/api/prescriptions/" + id);
   },
   // Deletes the book with the given id
-  deletePrescriptions: function(id) {
+  deletePrescription: function(id) {
     return axios.delete("/api/prescriptions/" + id);
   },
   // Saves a book to the database
-  savePrescriptions: function(prescriptionsData) {
+  savePrescription: function(prescriptionsData) {
     return axios.post("/api/prescriptions", prescriptionsData);
   }
 };

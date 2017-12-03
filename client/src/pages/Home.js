@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 
@@ -23,6 +22,9 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 
 import Disclaimer from "../components/Disclaimer";
 
+import App from "../App";
+
+
 
 
 
@@ -38,30 +40,63 @@ var Menu = reactNavBar.Menu;
           
 //           <ul id="nav-mobile" class="right hide-on-med-and-down">
 
+// What I think will work to link language pages to buttons
+// const isSpanish = () => {
+//     state = {
+//       spanish: true,
+//     }
+//   }
+
+// const Language = () => {
+
+//     getInitialState() => {
+//         return {
+//             isEnglish: (input English routes here)
+//         };
+//     },
+
+//     isSpanish() => {
+
+//         this.setState({isSpanish: (Spanish routes go here)});
+//     },
+
+//     render: function() {
+//         return(
+
+
+//             <{this.state.isSpanish} onClick={this.isSpanish.bind(this)} />
+//         );
+//     }
+// };
+
+// module.exports = Language;
+
+
 
 const Home = () =>
 
+//callback function and put the call back on app.js
+  
 
-	
 
    <Container fluid>
    <div>
     <h1><center>Welcome to Mi Medi Amig<sub>x</sub></center></h1>
    </div>
 
-	  <Row>
+    <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
           <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
-					</div>
-					</div><br />
-			
-				<div className="row">
+          </div>
+          </div><br />
+      
+        <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">Español
-							</button>
+              </button>
               <div id="demo" className="collapse">
                 <div className="thumbnail">  
                  <div className="caption, text-center">
@@ -81,50 +116,3 @@ const Home = () =>
   </Container>
 
 export default Home;
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Route, Router } from 'react-router-dom';
-// import App from './App';
-// import Home from './Home/Home';
-// import Callback from './Callback/Callback';
-// import Auth from './Auth/Auth';
-// import history from './history';
-
-// const auth = new Auth();
-
-// const handleAuthentication = (nextState, replace) => {
-//   if (/access_token|id_token|error/.test(nextState.location.hash)) {
-//     auth.handleAuthentication();
-//   }
-// }
-
-// export const makeMainRoutes = () => {
-//   return (
-//     <Router history={history} component={App}>
-//       <div>
-//       GOES IN LOGIN.JS ->  <Route path="/LOGIN" render={(props) => <App auth={auth} {...props} />} />
-//         REMOVE - <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
-//         <Route path="/callback" render={(props) => {
-//           handleAuthentication(props);
-//           return <Callback {...props} /> 
-//         }}/>
-//       </div>
-//     </Router>
-//   );
-// }

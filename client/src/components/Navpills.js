@@ -9,18 +9,53 @@ const Navpills = () =>
     <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
       <Link to="/tips">Health Tips</Link>
     </li>
+    <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
+      <Link to="/TipsEs">Consejos de Salud</Link>
+    </li>
+
     <li className={window.location.pathname === "/otc" ? "active" : ""}>
       <Link to="/otc">OTC Medication</Link>
     </li>
+   
+    <li className={window.location.pathname === "/otcEs" ? "active" : ""}>
+      <Link to="/otcEs">Medicamento de venta libre</Link>
+    </li>
+
+    
+
     <li className={window.location.pathname === "/medication" ? "active" : ""}>
       <Link to="/medication">Medication</Link>
     </li>
+
+
+    <li className={window.location.pathname === "/medicationEs" ? "active" : ""}>
+      <Link to="/medicationEs">Medicamento</Link>
+    </li>
+
+    <li className={window.location.pathname === "/medicationEs" ? "active" : ""}>
+      <Link to="/medicationEs">Medicamento</Link>
+    </li>
+
+
+
     <li className={window.location.pathname === "/login" ? "active" : ""}>
       <Link to="login">Login / Sign Up</Link>
     </li>
+
    <li className={window.location.pathname === "/medminder" ? "active" : ""}>
       <Link to="/medminder">Reminder</Link>
+    </li> 
+    <li className={window.location.pathname === "/medminderEs" ? "active" : ""}>
+      <Link to="/medminderEs">Recordatorio</Link>
     </li>
+
+    <li className={window.location.pathname === "/medminderEs" ? "active" : ""}>
+      <Link to="/medminderEs">Recordatorio</Link>
+    </li>
+
+
+
+
     
   </ul>;
 

@@ -9,19 +9,92 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 import Disclaimer from "../components/Disclaimer";
 import API from "../utils/API";
 import Auth from '../Auth/auth';
+import {Route, Switch, Redirect } from "react-router-dom";
+import decode from 'jwt-decode';
+import Login from "./Login";
+import {isLoggedIn} from "../Auth/auth.js";
+
+// const auth = new Auth();
 
 
-const auth = new Auth();
+// const handleAuthentication = (nextState, replace) => {
+//   if (/access_token|id_token|error/.test(nextState.location.hash)) {
+//     auth.handleAuthentication();
+//   }
+// }
 
+class chkLogin extends Component {
+  goTo(route) {
+    this.props.history.replace(`/${route}`)
+  }
 
-const handleAuthentication = (nextState, replace) => {
-  if (/access_token|id_token|error/.test(nextState.location.hash)) {
-    auth.handleAuthentication();
+  
+  render() {
+    const { isAuthenticated } = this.props.auth;
+
+    return (
+      <div>
+            {
+              !isAuthenticated() && (
+                  <button onClick={this.login.bind(this)}
+                  >
+                    Log In
+                  </button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <button onClick={this.logout.bind(this)}
+                  >
+                    Log Out
+                  </button>
+                )
+            }
+          
+      </div>
+    );
   }
 }
 
 
+
+
+// const checkAuth = () => {
+//   const token = localStorage.getItem('token');
+//   const refreshToken = localStorage.getItem('refreshToken');
+//   if (!token || !refreshToken) {
+//     return false;
+//   }
+
+//   try {
+//     // { exp: 12903819203 }
+//     const { exp } = decode(refreshToken);
+
+//     if (exp < new Date().getTime() / 1000) {
+//       return false;
+//     }
+
+//   } catch (e) {
+//     return false;
+//   }
+
+//   return true;
+// }
+
+// const AuthRoute = ({ component: Component, ...rest }) => (
+//   <Route {...rest} render={props => (
+//     checkAuth() ? (
+//       <Component {...props} />
+//     ) : (
+//         <Redirect to={{ Login: '/login' }} />
+//       )
+//   )} />
+// )
+
+
+
 class Medication extends Component {
+
   state = {
     prescriptions: [],
     PharmName: "",
@@ -44,14 +117,14 @@ class Medication extends Component {
   loadPrescriptions = () => {
     API.getPrescriptions()
       .then(res => 
-        this.setState({ prescriptions: res.data, PharmName:"" ,
-    PharmAddress:"",  PharmPhone:"", PharmDrugNum:"", PharmFillDate:"", DocName:"", PatientName:"", DrugInstruct:"", DrugName:"", DrugRefill:"", DrugUseByDate:"" })
+        this.setState({ prescriptions: res.data, PharmName:"",
+    PharmAddress:"", PharmPhone:"", PharmDrugNum:"", PharmFillDate:"", DocName:"", PatientName:"", DrugInstruct:"", DrugName:"", DrugRefill:"", DrugUseByDate:"" })
         )
       .catch(err => console.log(err));
   };
   
   deletePrescription = id => {
-    API.deletePrescriptions(id)
+    API.deletePrescription(id)
       .then(res => this.loadPrescriptions())
       .catch(err => console.log(err));
   };
@@ -66,7 +139,7 @@ class Medication extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate) {
-      API.savePrescriptions({
+      API.savePrescription({
         PharmName: this.state.PharmName,
         PharmAddress: this.state.PharmAddress,
         PharmPhone: this.state.PharmPhone,
@@ -112,7 +185,7 @@ class Medication extends Component {
                      <div className="caption, text-center">
                           <p>Here is an example of a medical prescription</p>
                       </div>
-                      <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
+                      <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Prescription example" className="img-responsive"/>
                     </div>
                   </div>
                 </div>
@@ -206,7 +279,7 @@ class Medication extends Component {
                             {prescription.PatientName} by {prescription.DrugName}
                           </strong>
                         </Link>
-                        <DeleteBtn onClick={() => this.deletePrescriptions(prescription._id)} />
+                        <DeleteBtn onClick={() => this.deletePrescription(prescription._id)} />
                       </ListItem>
                     ))}
                   </List>
