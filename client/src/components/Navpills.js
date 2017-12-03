@@ -32,12 +32,6 @@ const Navpills = () =>
       <Link to="/medicationEs">Medicamento</Link>
     </li>
 
-    <li className={window.location.pathname === "/medicationEs" ? "active" : ""}>
-      <Link to="/medicationEs">Medicamento</Link>
-    </li>
-
-
-
     <li className={window.location.pathname === "/login" ? "active" : ""}>
       <Link to="login">Login / Sign Up</Link>
     </li>
@@ -49,9 +43,6 @@ const Navpills = () =>
       <Link to="/medminderEs">Recordatorio</Link>
     </li>
 
-    <li className={window.location.pathname === "/medminderEs" ? "active" : ""}>
-      <Link to="/medminderEs">Recordatorio</Link>
-    </li>
 
 
 
