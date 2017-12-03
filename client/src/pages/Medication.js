@@ -117,8 +117,8 @@ class Medication extends Component {
   loadPrescriptions = () => {
     API.getPrescriptions()
       .then(res => 
-        this.setState({ prescriptions: res.data, PharmName:"" ,
-    PharmAddress:"" })
+        this.setState({ prescriptions: res.data, PharmName:"",
+    PharmAddress:"", PharmPhone:"", PharmDrugNum:"", PharmFillDate:"", DocName:"", PatientName:"", DrugInstruct:"", DrugName:"", DrugRefill:"", DrugUseByDate:"" })
         )
       .catch(err => console.log(err));
   };
@@ -139,7 +139,7 @@ class Medication extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate) {
-      API.savePrescriptions({
+      API.savePrescription({
         PharmName: this.state.PharmName,
         PharmAddress: this.state.PharmAddress,
         PharmPhone: this.state.PharmPhone,
@@ -185,7 +185,7 @@ class Medication extends Component {
                      <div className="caption, text-center">
                           <p>Here is an example of a medical prescription</p>
                       </div>
-                      <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
+                      <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Prescription example" className="img-responsive"/>
                     </div>
                   </div>
                 </div>

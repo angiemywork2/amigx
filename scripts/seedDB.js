@@ -15,25 +15,57 @@ const bookSeed = [
   {
     PharmName: "The Dead Zone",
     PharmAddress: "Stephen King",
-    
+    PharmPhone: "252 312 2314",
+    PharmDrugNum: "12334",
+    PharmFillDate: "12/12/1234",
+    DocName: "Dr. Name",
+    PatientName: "Dan",
+    DrugInstruct: "take 3 a day",
+    DrugName: "tylenol",
+    DrugRefill:"4",
+    DrugUseByDate: "12/30/1234",    
     date: new Date(Date.now())
   },
   {
     PharmName: "Lord of the Flies",
     PharmAddress: "William Golding",
-    
+    PharmPhone: "252 312 2314",
+    PharmDrugNum: "12334",
+    PharmFillDate: "12/12/1234",
+    DocName: "Dr. Name",
+    PatientName: "Dan",
+    DrugInstruct: "take 3 a day",
+    DrugName: "tylenol",
+    DrugRefill:"4",
+    DrugUseByDate: "12/30/1234",
     date: new Date(Date.now())
   },
   {
     PharmName: "The Catcher in the Rye",
     PharmAddress: "J.D. Salinger",
-    
+    PharmPhone: "252 312 2314",
+    PharmDrugNum: "12334",
+    PharmFillDate: "12/12/1234",
+    DocName: "Dr. Name",
+    PatientName: "Dan",
+    DrugInstruct: "take 3 a day",
+    DrugName: "tylenol",
+    DrugRefill:"4",
+    DrugUseByDate: "12/30/1234",    
     date: new Date(Date.now())
   },
   {
     PharmName: "The Punch Escrow",
     PharmAddress: "Tal M. Klein",
-    
+    PharmPhone: "252 312 2314",
+    PharmDrugNum: "12334",
+    PharmFillDate: "12/12/1234",
+    DocName: "Dr. Name",
+    PatientName: "Dan",
+    DrugInstruct: "take 3 a day",
+    DrugName: "tylenol",
+    DrugRefill:"4",
+    DrugUseByDate: "12/30/1234",
     date: new Date(Date.now())
   }
 ];

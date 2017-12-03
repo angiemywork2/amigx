@@ -16,6 +16,6 @@ const prescriptionSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Prescription = mongoose.model("Prescription", bookSchema);
+const Prescription = mongoose.model("Prescription", prescriptionSchema);
 
 module.exports = Prescription;

@@ -81,7 +81,7 @@ const App = () =>
         <Route exact path="/TipsEs" component={TipsEs} />
         <Route exact path="/otc" component={otc} />
         <Route exact path="/otcEs" component={otcEs} />
-        <Route exact path="/Medication" component={Medication} />
+        <Route exact path="/prescriptions" component={Medication} />
         <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/MedMinder" component={MedMinder} /> 
