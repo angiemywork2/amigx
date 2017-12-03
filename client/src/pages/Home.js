@@ -22,6 +22,9 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 
 import Disclaimer from "../components/Disclaimer";
 
+import App from "../App";
+
+
 
 
 
@@ -60,6 +63,7 @@ var Menu = reactNavBar.Menu;
 //     render: function() {
 //         return(
 
+
 //             <{this.state.isSpanish} onClick={this.isSpanish.bind(this)} />
 //         );
 //     }
@@ -70,6 +74,10 @@ var Menu = reactNavBar.Menu;
 
 
 const Home = () =>
+
+//callback function and put the call back on app.js
+  
+
 
    <Container fluid>
    <div>
@@ -108,50 +116,3 @@ const Home = () =>
   </Container>
 
 export default Home;
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import { Route, Router } from 'react-router-dom';
-// import App from './App';
-// import Home from './Home/Home';
-// import Callback from './Callback/Callback';
-// import Auth from './Auth/Auth';
-// import history from './history';
-
-// const auth = new Auth();
-
-// const handleAuthentication = (nextState, replace) => {
-//   if (/access_token|id_token|error/.test(nextState.location.hash)) {
-//     auth.handleAuthentication();
-//   }
-// }
-
-// export const makeMainRoutes = () => {
-//   return (
-//     <Router history={history} component={App}>
-//       <div>
-//       GOES IN LOGIN.JS ->  <Route path="/LOGIN" render={(props) => <App auth={auth} {...props} />} />
-//         REMOVE - <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
-//         <Route path="/callback" render={(props) => {
-//           handleAuthentication(props);
-//           return <Callback {...props} /> 
-//         }}/>
-//       </div>
-//     </Router>
-//   );
-// }
