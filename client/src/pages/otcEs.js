@@ -28,11 +28,12 @@ const otcEs = () =>
   <Container fluid>
     <Row>
       <Col size ="md-10, col-md-offset-1">
-        <h1>Quick Reference List of Over-The-Counter Medication</h1>
+        <h1>Lista de referencia rápida de medicamentos sin receta
+</h1>
           <Jumbotron>
             <div className="panel-group" id="accordion">
-              <p>Listed are commonly used over the counter medications.  
-                  Please consult with your doctor before taking any medication!
+              <p>La lista se usa comúnmente en medicamentos de venta libre. 
+              ¡Consulte a su médico antes de tomar cualquier medicamento!
               </p>
              
 
@@ -41,7 +42,7 @@ const otcEs = () =>
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea1">
-                        <h4>About Advil | Motrin (Ibuprofen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Advil | Motrin (Ibuprofen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -50,31 +51,31 @@ const otcEs = () =>
                 <div id="collapsea1" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Advil | Motrin is commonly used for: 
+                    Advil | Motrin se usa para:
                       <ul>
-                        <li>Fever Reducer</li>
-                        <li>Headache</li>
-                        <li>Menstrual Cramps</li>
-                        <li>Muscle Aches</li>
+                        <li>Reductor de fiebre</li>
+                        <li>Aliviar dolores de cabeza</li>
+                        <li>Aliviar calambre menstruales</li>
+                        <li>Dolores de cuerpo</li>
                       </ul> 
                     </p>  
                     <p>
-                    How it Works:
+                    Como funciona:
                       <ul>
-                        <li>Reduces Inflammation. This effect helps to decrease swelling, pain, or fever.</li>
+                        <li>Reduce inflamación para disminuir la inflamación, reducir el dolor, o reducir la fiebre</li>
+
                       </ul>
                     </p>
                   </div>
                 </div>
                 
 
-
               <h3>Aleve (Naproxen)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea2">
-                        <h4>About Aleve (Naproxen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Aleve (Naproxen) <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -83,22 +84,21 @@ const otcEs = () =>
                 <div id="collapsea2" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Aleve is commonly used for: 
+                    Aleve se usa para for: 
                       <ul>
-                        <li>Fever Reducer</li>
-                        <li>Headache</li>
-                        <li>Menstrual Cramps</li>
-                        <li>Minor aches and pain due to the common cold or flu</li>
-                        <li>Muscle Aches</li>
+                        <li>Reductor de fiebre</li>
+                        <li>Aliviar dolores de cabeza</li>
+                        <li>Aliviar calambre menstruales</li>
+                        <li>Dolores de cuerpos asociados con la gripe</li>
+                        <li>Dolores musculares</li>
                       </ul> 
                     </p>  
                     <p>
-                    How it Works:
+                    Como funciona:
                       <ul>
                         <li>
-                        It works by blocking your body's production of certain natural 
-                        substances that cause inflammation. This effect helps to decrease 
-                        swelling, pain, or fever.
+                        Le impide al cuerpo la producción de sustancias naturales que causan la inflamación. 
+                        Ayuda a disminuir la inflamación, dolor, o fiebre.
                         </li>
                       </ul>
                     </p>
@@ -111,7 +111,7 @@ const otcEs = () =>
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea3">
-                        <h4>About Benadryl <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Benadryl <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -120,42 +120,39 @@ const otcEs = () =>
                 <div id="collapsea3" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Benadryl is commonly used to releive the symptoms of: 
+                    Benadryl se usa para tratar los síntomas de: 
                       <ul>
-                        <li>Allergies</li>
-                        <li>Hay Fever</li>
-                        <li>Common Cold</li>
+                        <li>Alergias</li>
+                        <li>Fiebre de heo</li>
+                        <li>Resfriado</li>
                       </ul> 
                     </p>
 
                     <p>
-                    These symptoms include:
+                    Estos síntomas incluyen:
                      <ul>
-                      <li>Rash</li>
-                      <li>Itchy, watery eyes</li>
-                      <li>Cough</li>
-                      <li>Runny Nose</li>
-                      <li>Sneezing</li>
+                      <li>Sarpullido</li>
+                      <li>Ojos lloroso e irritados</li>
+                      <li>Toz</li>
+                      <li>Congestion nasal</li>
+                      <li>Estornudos</li>
                      </ul>
                     </p>  
 
-                    <p> Benadryl is also used to prevent and treat the following 
-                        if when caused by motion sickness:
+                    <p> Benadryl se usa para prevenir or tratar estos sintomas de cinetosis:
                       <ul>
                         <li>Nausea</li>
-                        <li>Vomiting</li>
-                        <li>Dizziness</li>
+                        <li>Vomito</li>
+                        <li>Mareo</li>
                       </ul>
                     </p>
                     
                     <p>
-                    How it Works:
+                    Como funciona:
                       <ul>
                         <li>
-                        This medication works by blocking a certain natural substance (histamine) that 
-                        your body makes during an allergic reaction. Its drying effects on such symptoms 
-                        as watery eyes and runny nose are caused by blocking another natural substance made
-                        by your body (acetylcholine).
+                        Impide al cuerpo que fabrique la sustancia (histamina) durante una reacción alérgica. 
+                        Combate los síntomas.
                         </li>
                       </ul>
                     </p>
@@ -163,12 +160,12 @@ const otcEs = () =>
                 </div>
 
 
-              <h3>Mucinex (An Expectorant called Guaifenesin)</h3>
+              <h3>Mucinex (Un expectorante llamado Guaifenesin)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea4">
-                        <h4>About Mucinex <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Mucinex <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -177,17 +174,17 @@ const otcEs = () =>
                 <div id="collapsea4" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Mucinex is commonly used for the temporary relief of: 
+                    Mucinex se usa para proveer alivio temporal de:
                       <ul>
-                        <li>Coughs</li>
+                        <li>Toz</li>
                       </ul> 
                     </p>  
                     <p>
-                    How it Works:
+                    Como funciona:
                       <ul>
                         <li>
-                         It works by thinning and loosening mucus in the airways, 
-                         clearing congestion, and making breathing easier.
+                         Funciona adelgazando y aflojando flema  en las vías respiratorias, 
+                         despejando la congestión y facilitando la respiración.
                         </li>
                       </ul>
                     </p>
@@ -195,12 +192,12 @@ const otcEs = () =>
                 </div>
 
 
-              <h3>Sudafed (Pseudoephedrine, a decongestant)</h3>
+              <h3>Sudafed (Pseudoephedrine, un descongestionante)</h3>
                 <div className="panel panel-default">
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea5">
-                        <h4>About Sudafed <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Sudafed <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -209,18 +206,17 @@ const otcEs = () =>
                 <div id="collapsea5" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Sudafed is commonly used for the temporary relief of: 
+                    Sudafed se usa para proveer alivio temporal de: 
                       <ul>
-                        <li>Sinus Pain or Pressure</li>
-                        <li>Stuffy Nose</li>
+                        <li>Dolor o Pression sinusal</li>
+                        <li>Congestion nasal</li>
                       </ul> 
                     </p>  
                     <p>
-                    How it Works:
+                    Como funciona:
                       <ul>
                         <li>
-                          It works by narrowing the blood vessels to decrease 
-                          swelling and congestion.
+                          Disminuye congestión y hinchazón al estrechar los vasos sanguíneos.
                         </li>
                       </ul>
                     </p>
@@ -235,7 +231,7 @@ const otcEs = () =>
                   <div className="panel-heading">
                     <h3 className= "panel-title">
                       <a data-toggle = "collapse" data-parent = "#accordion" href=  "#collapsea6">
-                        <h4>About Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
+                        <h4>Sobre Tylenol <span className="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span></h4>
                       </a>
                     </h3>
                   </div>
@@ -244,20 +240,20 @@ const otcEs = () =>
                 <div id="collapsea6" className="panel-collapse collapse ">
                   <div className="panel-body">
                    <p>
-                    Tylenol is commonly used to treat mild to moderate pain from: 
+                    Tylenol se usa para aliviar dolor leve a moderado de:
                       <ul>
-                        <li>Headaches</li>
-                        <li>Menstrual Periods</li>
-                        <li>Toothaches</li>
-                        <li>Backsaches</li>
-                        <li>Osteoarthritis</li>
-                        <li>Cold or flu aches and pains</li>
+                        <li>dolores de cabeza</li>
+                        <li>dolores menstruales</li>
+                        <li>dolores dentales</li>
+                        <li>dolores de espalda</li>
+                        <li>osteoartritis</li>
+                       <li>Dolores causado por la gripe o resfriados</li>
                       </ul> 
                     </p> 
                     <p>
-                    Tylenol is also used as a: 
+                    Tylenol también se usa como: 
                     <ul>
-                      <li>Fever Reducer</li>
+                      <li>Reductor de fiebre</li>
                     </ul>
                     </p>
                     

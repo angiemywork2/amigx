@@ -25,11 +25,18 @@ const Navpills = () =>
     <li className={window.location.pathname === "/medication" ? "active" : ""}>
       <Link to="/medication">Medication</Link>
     </li>
+
+    <li className={window.location.pathname === "/medicationEs" ? "active" : ""}>
+      <Link to="/medicationEs">Medicamento</Link>
+    </li>
     <li className={window.location.pathname === "/login" ? "active" : ""}>
       <Link to="login">Login / Sign Up</Link>
     </li>
    <li className={window.location.pathname === "/medminder" ? "active" : ""}>
       <Link to="/medminder">Reminder</Link>
+    </li>
+    <li className={window.location.pathname === "/medminderEs" ? "active" : ""}>
+      <Link to="/medminderEs">Recordatorio</Link>
     </li>
     
   </ul>;
