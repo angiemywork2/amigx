@@ -81,7 +81,7 @@ const Home = () =>
 
    <Container fluid>
    <div>
-    <h1><center>Welcome to Mi Medi Amig<sub>x</sub></center></h1>
+    <h1><center>Welcome to Mi Amig<sub>x</sub></center></h1>
    </div>
 
     <Row>

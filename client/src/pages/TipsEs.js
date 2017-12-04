@@ -11,7 +11,7 @@ import DisclaimerEs from "../components/DisclaimerEs";
 const TipsEs = () =>
   <Container fluid>
     <Row>
-    <Col size ="md-10">
+    <div className ="col-md-10 col-md-offset-1">
       <h1>Consejos de Salud</h1>
       <Jumbotron>
         <div className="panel-group" id="accordion">
@@ -45,6 +45,9 @@ const TipsEs = () =>
             <div id="collapsea2" className="panel-collapse collapse ">
               <div className="panel-body">
                 <p>
+                  Síntomas pueden ocurrir rápidamente con diabetes tipo 1,
+                   pero se puede tomar años o nunca ocurrir para la diabetes tipo 2.
+                </p>
                   <ul>
                     <li>Urinación y sed frecuente</li>
                     <li>El aumento de hambre</li>
@@ -53,9 +56,7 @@ const TipsEs = () =>
                     <li>Entumecimiento de manos o pies</li>
                     <li>Pérdida de peso inexplicada</li>
                   </ul>
-                  Síntomas pueden ocurrir rápidamente con diabetes tipo 1,
-                   pero se puede tomar años o nunca ocurrir para la diabetes tipo 2.
-                </p>
+                  
               </div>
             </div>
           </div>
@@ -70,7 +71,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsea3" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                       <li>Tipo 1</li>
                       <p><small>El cuerpo no produce insulina porque el sistema inmune ataca 
@@ -84,7 +85,7 @@ const TipsEs = () =>
                        Por lo general, desaparece después de que el embarazo ha terminado. Ahi esta,
                        sin embargo, una mayor posibilidad de desarrollar el tipo 2 más tarde en la vida.</small></p>
                     </ul>
-                    </p>
+                  
               </div>
             </div>
           </div>
@@ -99,7 +100,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsea4" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p> Diabetes puede causar:
+                <p> Diabetes puede causar:</p>
                   <ul>
                     <li>Enfermedades del corazón</li>
                     <li>Derrame cerebral</li>
@@ -108,7 +109,7 @@ const TipsEs = () =>
                     <li>Daños a los nervios</li>
                     <li>Problemas en los pies</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -123,14 +124,14 @@ const TipsEs = () =>
             </div>
             <div id="collapsea5" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>Los latinos de ambos sexos tienen un riesgo más alto de desarrollar diabetes tipos dos que caucasianos.</li>
                     <li>Tienen una probabilidad 50%  más alta de morir por complicaciones relacionadas al diabetes que los caucasianos.</li>
                     <li>Latinos con diabetes tienen tasas más altas de muerte relacionada a enfermedades cardíacas que los latinos sin diabetes.</li>
                     <li>The prevalencia de la diabetes en la población latina se espera que aumente un 127%.</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -145,15 +146,15 @@ const TipsEs = () =>
             </div>
             <div id="collapsea6" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>Enlaces en Inglés
+                <p>Enlaces en Inglés</p>
                   <ul>
                     <li><a href="https://minorityhealth.hhs.gov/omh/browse.aspx?lvl=4&lvlid=63">https://minorityhealth.hhs.gov/omh/browse.aspx?lvl=4&lvlid=63</a></li>
                     <li><a href="http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/">http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/</a></li>
                     <li><a href="http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg"></a>http://www.nei.nih.gov/sites/default/files/nehep-images/NEI_OJOinfographic.jpg</li>
         
                   </ul>
-                </p>
-                <p>Enlaces en Español
+                
+                <p>Enlaces en Español</p>
                   <ul>
                     <li><a href="https://infografiasencastellano.files.wordpress.com/2012/06/ladiabetes.jpg">https://infografiasencastellano.files.wordpress.com/2012/06/ladiabetes.jpg</a></li>
                     <li><a href="http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/">http://www.diabetes.org/newsroom/press-releases/2014/diabetes-among-hispanics-all-are-not-equal.html?referrer=https://www.google.com/</a></li>
@@ -164,7 +165,7 @@ const TipsEs = () =>
                       </a>
                       </li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -203,7 +204,7 @@ const TipsEs = () =>
             </div>
             <div id="collapseb2" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>Dolores de cabeza</li>
                     <li>Mareo</li>
@@ -213,7 +214,7 @@ const TipsEs = () =>
                     <li>Náusea</li>
                   </ul>
                   La presión arterial alta puede no tener ningún síntoma, por lo que la hipertensión ha sido etiquetada como "el asesino silencioso".
-                </p>
+                
               </div>
             </div>
           </div>
@@ -230,12 +231,13 @@ const TipsEs = () =>
               <div className="panel-body">
                 <p>
                   La presión arterial alta de larga duración puede provocar complicaciones múltiples, que incluyen:
+                </p>
                   <ul>
                     <li>Ataque cardíaco y otras enfermedades cardiovasculares</li>
                     <li>Enfermedad del riñon</li>
                     <li>Carrera</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -250,13 +252,13 @@ const TipsEs = () =>
             </div>
             <div id="collapseb4" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>Las enfermedades del corazón y los accidentes cerebrovasculares 
                     son la principal causa de muerte entre los latinoamericanos</li>
                     <li></li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -303,7 +305,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsec1" className="panel-collapse collapse ">
               <div className="panel-body">
-                 <p>
+                
                   <ul>
                     <li>
                       Colesterol es un tipo de grasa (lípido) en la sangre. El cuerpo produce todo el colesterol que las células necesitan para funcionar.
@@ -317,7 +319,7 @@ const TipsEs = () =>
                        es más difícil que la sangre fluya a través de ellos.
                       </li> 
                     </ul>
-                  </p>
+                
               </div>
             </div>
           </div>
@@ -332,7 +334,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsec2" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>
                       El colesterol alto no causa síntomas, se frecuentemente se diagnostica con pruebas de sangre que mide los niveles de colesterol
@@ -344,7 +346,7 @@ const TipsEs = () =>
                        colesterol extra y otros tipos de grasa.
                     </li>
                   </ul>
-                </p>              
+                              
               </div>
             </div>
           </div>
@@ -359,7 +361,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsec3" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>Diferentes tipos de Colesterol.
+                <p>Diferentes tipos de Colesterol.</p>
                   <ul>
                     <li>
                       LDL, el colesterol malo, puede aumentar el riesgo de enfermedades cardiovasculares, ataques al corazón, y derrames cerebrales.
@@ -369,7 +371,7 @@ const TipsEs = () =>
 
                     </li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -385,9 +387,8 @@ const TipsEs = () =>
             <div id="collapsec4" className="panel-collapse collapse ">
               <div className="panel-body">
                 <p>
-            La acumulacion del colesterol puede conducir a coagulos de sangre peligrosos y inflamación que pueden causar ataques al corazón y derrames cerebrales. 
-
-          </p>
+                  La acumulacion del colesterol puede conducir a coagulos de sangre peligrosos y inflamación que pueden causar ataques al corazón y derrames cerebrales. 
+                </p>
               </div>
             </div>
           </div>
@@ -441,7 +442,8 @@ const TipsEs = () =>
                 <p>La salud mental se refiere al estado emocional, psicológico, y bienestar social. Afecto como uno piensa, siente, y actúa. Al mismo tiempo determina como uno maneja el estres, se relaciona con otros, y toma decisiones haciendo a la salud mental importante en todas las etapas de la vida.
                 </p>
                 <p>
-                Factores importantes para la salud mental incluyen:
+                  Factores importantes para la salud mental incluyen:
+                </p>
                   <ul>
                     <li>
                       Biologia, como los genes o la composicion quimica del cerebro
@@ -453,7 +455,7 @@ const TipsEs = () =>
                       Historial familiar de problemas mentales
                     </li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -468,7 +470,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsed2" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>Sintiendose triste o deprimido</li>
                     <li>Pensamiento confundido o reduccion en la habilidad de concentracion</li>
@@ -480,7 +482,7 @@ const TipsEs = () =>
                     <li>Habitos anormales de uso de drogas, fumar, o beber</li>
                     <li>La inhabilidad para poder hacer tareas matutinas, como proveer por la familia or ir al trabajo o a la escuela</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -495,14 +497,14 @@ const TipsEs = () =>
             </div>
             <div id="collapsed3" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>Trastorno de ansiedad</li>
                     <li>Depression</li>
                     <li>Trastorno de estrés postraumático</li>
                     <li>Alcolismo</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -517,7 +519,7 @@ const TipsEs = () =>
             </div>
             <div id="collapsed4" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>
                       Muchos latinos no buscan tratamiento porque no reconocen los síntomas 
@@ -539,7 +541,7 @@ const TipsEs = () =>
                       o volverse desabilitantes.
                     </li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -649,13 +651,13 @@ const TipsEs = () =>
             </div>
             <div id="collapsee4" className="panel-collapse collapse ">
               <div className="panel-body">
-                <p>
+                
                   <ul>
                     <li>La obesidad aumenta el riesgo de todos los tipos de muertes.</li>
                     <li>La obesidad occurre frecuentemente en las comunidades latinas por falta de acceso a comidas saludabless a precios accesibles.</li>
                     <li>Los latinos tienden a ser menos activos al no tener acceso a lugares seguros para jugar o hacer actividades fisicas.</li>
                   </ul>
-                </p>
+                
               </div>
             </div>
           </div>
@@ -689,7 +691,7 @@ const TipsEs = () =>
 
         </div>
       </Jumbotron>
-    </Col>
+    </div>
     </Row>
     <Row>
       <DisclaimerEs />

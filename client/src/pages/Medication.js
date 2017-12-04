@@ -160,7 +160,7 @@ class Medication extends Component {
     return (
       <Container fluid>
         <Row>
-          <Col size ="md-10">
+          <div className ="col-md-10 col-md-offset-1">
             <Jumbotron>
               <h1 className="text-center">Medication Translator</h1>
               <Row>
@@ -191,12 +191,12 @@ class Medication extends Component {
                 </div>
               </div>
             </Jumbotron>
-          </Col>
+          </div>
           </Row>
 
 
             <Row>
-              <Col size="md-6">
+              <div className="col-md-5 col-md-offset-1">
                 <Jumbotron>
                   <form>
                     <Input
@@ -264,11 +264,11 @@ class Medication extends Component {
                     <br/>
                   </form>
                 </Jumbotron>
-              </Col>
+              </div>
 
-              <Col size ="md-6">
+              <div className ="col-md-5">
                 <Jumbotron>
-                  <h1>Prescription List</h1>
+                  <h1 className="text-center">Prescription List</h1>
                 </Jumbotron>
                 {this.state.prescriptions.length ? (
                   <List>
@@ -284,9 +284,9 @@ class Medication extends Component {
                     ))}
                   </List>
                 ) : (
-                  <h3>No Results to Display</h3>
+                  <h3 className="text-center">No Results to Display</h3>
                 )}
-              </Col>
+              </div>
             </Row>
 
         <Row>
