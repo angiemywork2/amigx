@@ -171,7 +171,7 @@ class Medication extends Component {
                         Use the form below to translate pharmacuetical prescriptions into spanish.
                       </h3>
                       <h3 className="text-center">
-                      click the example below to see where parts of the prescription are usually located.
+                      Click the example below to see where parts of the prescription are usually located.
                       </h3>
                     </div>
                   </div>

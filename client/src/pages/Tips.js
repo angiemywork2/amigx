@@ -7,12 +7,12 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import Disclaimer from "../components/Disclaimer";
-
+import "./Tips.css";
 const Tips = () =>
-  <Container fluid>
+  <Container fluid className="container">
     <Row>
     <div className="col-md-10 col-md-offset-1">
-      <h1>Health Tips</h1>
+      <h1 className="text-center">Health Tips</h1>
       <Jumbotron>
         <div className="panel-group" id="accordion">
           <h1>Diabetes</h1>

@@ -173,6 +173,9 @@ class MedicationEs extends Component {
                       <h3 className="text-center">
                       Utilice el siguiente formulario para traducir prescripciones farmacéuticas al español.
                       </h3>
+                      <h3 className="text-center">
+                      Pulse el botón para ver un ejemplo que muestra las partes de una receta farmacéutica
+                      </h3>
                     </div>
                   </div>
                 </Col>
@@ -183,8 +186,9 @@ class MedicationEs extends Component {
                   <div id="demo" className="collapse">
                     <div className="thumbnail">  
                      <div className="caption, text-center">
-                          <p>Pulse el botón para ver un ejemplo que muestra las partes de una receta farmacéutica
-</p>
+                          <p>
+                            Este is un ejemplo de una recete farmacéutica
+                          </p>
                       </div>
                       <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
                     </div>
