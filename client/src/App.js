@@ -11,6 +11,7 @@ import otcEs from "./pages/otcEs";
 import Login from "./pages/Login";
 import Medication from "./pages/Medication";
 import MedicationEs from "./pages/MedicationEs";
+import Detail from "./pages/Detail";
 import MedMinder from "./pages/MedMinder";
 import MedMinderEs from "./pages/MedMinderEs";
 import Navbar from 'react-navbar';
@@ -87,6 +88,7 @@ const App = () =>
 
         <Route exact path="/Medication" component={Medication} />
         <Route exact path="/MedicationEs" component={MedicationEs} />
+        <Route exact path="/prescriptions/:id" component={Detail}/>
         <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
         <Route exact path="/MedMinder" component={MedMinder} /> 

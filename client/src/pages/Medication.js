@@ -111,7 +111,7 @@ class Medication extends Component {
   };
 
   componentDidMount() {
-    this.loadPrescriptions;
+    this.loadPrescriptions();
   };
 
   loadPrescriptions = () => {
@@ -146,6 +146,7 @@ class Medication extends Component {
         PharmDrugNum: this.state.PharmDrugNum,
         PharmFillDate: this.state.PharmFillDate,
         DocName: this.state.DocName,
+        PatientName: this.state.PatientName,
         DrugInstruct: this.state.DrugInstruct,
         DrugName: this.state.DrugName,
         DrugRefill: this.state.DrugRefill,

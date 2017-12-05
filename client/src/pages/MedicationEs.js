@@ -141,13 +141,14 @@ class MedicationEs extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     if(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate) {
-      API.savePrescriptions({
+      API.savePrescription({
         PharmName: this.state.PharmName,
         PharmAddress: this.state.PharmAddress,
         PharmPhone: this.state.PharmPhone,
         PharmDrugNum: this.state.PharmDrugNum,
         PharmFillDate: this.state.PharmFillDate,
         DocName: this.state.DocName,
+        PatientName: this.state.PatientName,
         DrugInstruct: this.state.DrugInstruct,
         DrugName: this.state.DrugName,
         DrugRefill: this.state.DrugRefill,
