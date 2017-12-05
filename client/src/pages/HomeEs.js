@@ -22,6 +22,7 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
 import DisclaimerEs from "../components/DisclaimerEs";
+import "./Home.css";
 
 import App from "../App";
 
@@ -78,11 +79,12 @@ const HomeEs = () =>
 
    <Container fluid>
    <div>
-    <h1><center>Welcome to Mi Amig<sub>x</sub></center></h1>
+    <h1><center>Bienvenido a Mi Amig<sub>x</sub></center></h1>
    </div>
     <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
+        <h2><center>Tu salud es importante!</center></h2>
           <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>

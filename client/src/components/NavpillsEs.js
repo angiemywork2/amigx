@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NavpillsEs = () =>
   <ul className="nav nav-tabs">
     <li className={window.location.pathname === "/" ? "active" : ""}>
-      <Link to="/">HomeEs</Link>
+      <Link to="/">Home</Link>
     </li>
     
    <li className={window.location.pathname === "/Health Tips" ? "active" : ""}>
@@ -20,7 +20,7 @@ const NavpillsEs = () =>
       <Link to="/medicationEs">Medicamento</Link>
     </li>
     <li className={window.location.pathname === "/login" ? "active" : ""}>
-      <Link to="login">Login / Sign Up</Link>
+      <Link to="login">Iniciar sesión / Regístrate</Link>
     </li>
   
     <li className={window.location.pathname === "/medminderEs" ? "active" : ""}>

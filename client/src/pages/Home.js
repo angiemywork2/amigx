@@ -21,6 +21,7 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
 import Disclaimer from "../components/Disclaimer";
+import "./Home.css";
 
 import App from "../App";
 
@@ -82,6 +83,7 @@ const Home = () =>
     <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
+        <h2><center> Your Health is Important!!!!</center></h2>
           <div className="row">
             <div className="text-center">
               <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
