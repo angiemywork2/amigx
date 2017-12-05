@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navpills from "../components/Navpills";
+import NavpillsEs from "../components/NavpillsEs";
 
 import Tips from "../pages/Tips";
 import otc from "../pages/otc";
@@ -20,7 +21,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
-import Disclaimer from "../components/Disclaimer";
+import DisclaimerEs from "../components/DisclaimerEs";
 
 import App from "../App";
 
@@ -73,7 +74,7 @@ var Menu = reactNavBar.Menu;
 
 
 
-const Home = () =>
+const HomeEs = () =>
 
    <Container fluid>
    <div>
@@ -106,8 +107,8 @@ const Home = () =>
       </Col>
     </Row>
     <Row>
-      <Disclaimer></Disclaimer>
+      <DisclaimerEs></DisclaimerEs>
     </Row>
   </Container>
 
-export default Home;
+export default HomeEs;
