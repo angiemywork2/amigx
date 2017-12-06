@@ -16,5 +16,9 @@ export default {
   // Saves a book to the database
   savePrescription: function(prescriptionsData) {
     return axios.post("/api/prescriptions", prescriptionsData);
+  },
+
+  translate: function(prescription){
+    return axios.post("/api/translate")
   }
 };
