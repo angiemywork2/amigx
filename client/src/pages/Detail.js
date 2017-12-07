@@ -9,13 +9,11 @@ class Detail extends Component{
 		prescription:{}
 	};
 
-	componentDidMount() {
+	compnentDedMount() {
 		API.getPrescription(this.props.match.params.id)
 		.then(res=> this.setState({ prescription: res.data }))
 		.catch(err => console.log(err));
-	};
-
-
+	}
 
 	render() {
 		return(
@@ -24,7 +22,7 @@ class Detail extends Component{
 		          <Col size="md-12">
 		            <Jumbotron>
 		              <h1>
-		                {this.state.prescription.DrugName} for {this.state.prescription.PatientName}
+		                {this.state.prescription.DrugName} by {this.state.prescription.PatientName}
 		              </h1>
 		            </Jumbotron>
 		          </Col>
@@ -32,7 +30,7 @@ class Detail extends Component{
 		        <Row>
 		          <Col size="md-10 md-offset-1">
 		            <article>
-		              <h1>Prescription Info</h1>
+		              <h1>Synopsis</h1>
 		              <p>
 		                {this.state.prescription.DrugInstruct}
 		              </p>
