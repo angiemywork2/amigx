@@ -138,7 +138,7 @@ class Medication extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate) {
+    if(this.state.PharmName && this.state.PharmDrugNum && this.state.DocName && this.state.PatientName && this.state.DrugInstruct && this.state.DrugName) {
       API.savePrescription({
         PharmName: this.state.PharmName,
         PharmAddress: this.state.PharmAddress,
@@ -257,10 +257,10 @@ class Medication extends Component {
                       placeholder="Use By Date (optional)"/>
 
                     <FormBtn
-                      disabled = {!(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate)}
+                      disabled = {!(this.state.PharmName && this.state.PharmDrugNum && this.state.DocName && this.state.PatientName && this.state.DrugInstruct && this.state.DrugName)}
                       onClick={this.handleFormSubmit}
                     >
-                      Translate Prescription
+                      Save
                     </FormBtn>
                     <br/>
                   </form>
@@ -269,7 +269,7 @@ class Medication extends Component {
 
               <div className ="col-md-5">
                 <Jumbotron>
-                  <h1 className="text-center">Prescription List</h1>
+                  <h2 className="text-center">Prescription List</h2>
                 </Jumbotron>
                 {this.state.prescriptions.length ? (
                   <List>

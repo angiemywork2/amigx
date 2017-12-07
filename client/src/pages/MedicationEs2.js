@@ -259,7 +259,7 @@ class MedicationEs extends Component {
                       disabled = {!(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate)}
                       onClick={this.handleFormSubmit}
                     >
-                      Translate Prescription
+                      Guardar
                     </FormBtn>
                     <br/>
                   </form>

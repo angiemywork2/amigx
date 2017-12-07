@@ -140,7 +140,7 @@ class MedicationEs extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    if(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate) {
+    if(this.state.PharmName && this.state.PharmDrugNum && this.state.DocName && this.state.PatientName && this.state.DrugInstruct && this.state.DrugName) {
       API.savePrescription({
         PharmName: this.state.PharmName,
         PharmAddress: this.state.PharmAddress,
@@ -262,10 +262,10 @@ class MedicationEs extends Component {
                       placeholder="Fecha de Caducidad (optativo)"/>
 
                     <FormBtn
-                      disabled = {!(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate)}
+                      disabled = {!(this.state.PharmName && this.state.PharmDrugNum && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName)}
                       onClick={this.handleFormSubmit}
                     >
-                      Traducir prescripción
+                      Guardar
                     </FormBtn>
                     <br/>
                   </form>
