@@ -6,7 +6,11 @@ img{
 }
 
 h2 {
-  color:blue;
+  color:#e67e00;
+}
+
+h3 {
+  color: #202020;
 }
 
 .flipswitch {

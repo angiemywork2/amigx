@@ -86,7 +86,7 @@ const HomeEs = () =>
     <Row>
       <Col size ="md-10, col-md-offset-1">
         <Jumbotron>
-        <h2><center>Tu salud es importante!</center></h2>
+        <h2><center>Tu salud es importante!!!!</center></h2>
           <div className="row">
             <div className="text-center">
               <h3>Mi Amigx está aquí para ayudarlo a controlar su salud ayudándole a 
