@@ -4,7 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
-class Detail extends Component{
+class DetailEs extends Component{
 	state = {
 		prescription:{}
 	};
@@ -22,7 +22,7 @@ class Detail extends Component{
 		          <Col size="md-12">
 		            <Jumbotron>
 		              <h1>
-		                {this.state.prescription.DrugName} for {this.state.prescription.PatientName}
+		                {this.state.prescription.DrugName} Para {this.state.prescription.PatientName}
 		              </h1>
 		            </Jumbotron>
 		          </Col>
@@ -30,7 +30,7 @@ class Detail extends Component{
 		        <Row>
 		          <Col size="md-10 md-offset-1">
 		            <article>
-		              <h1>Prescription Details </h1>
+		              <h1>Detalles de Receta </h1>
 		              <p>
 		                {this.state.prescription.DrugInstruct}
 		              </p>
@@ -39,7 +39,7 @@ class Detail extends Component{
 		        </Row>
 		        <Row>
 		          <Col size="md-2">
-		            <Link to="/Medication">← Back to Medication</Link>
+		            <Link to="/MedicationES">← Regrese a Medicamentos</Link>
 		          </Col>
 		        </Row>
 			</Container>
@@ -47,4 +47,4 @@ class Detail extends Component{
 	}
 }
 
-export default Detail;
+export default DetailEs;

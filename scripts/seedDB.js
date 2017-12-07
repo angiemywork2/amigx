@@ -13,8 +13,8 @@ mongoose.connect(
 
 const bookSeed = [
   {
-    PharmName: "The Dead Zone",
-    PharmAddress: "Stephen King",
+    PharmName: "CVS",
+    PharmAddress: "123 Main St",
     PharmPhone: "252 312 2314",
     PharmDrugNum: "12334",
     PharmFillDate: "12/12/1234",
@@ -27,8 +27,8 @@ const bookSeed = [
     date: new Date(Date.now())
   },
   {
-    PharmName: "Lord of the Flies",
-    PharmAddress: "William Golding",
+    PharmName: "Kroger",
+    PharmAddress: "4456 King Ave",
     PharmPhone: "252 312 2314",
     PharmDrugNum: "12334",
     PharmFillDate: "12/12/1234",
@@ -41,8 +41,8 @@ const bookSeed = [
     date: new Date(Date.now())
   },
   {
-    PharmName: "The Catcher in the Rye",
-    PharmAddress: "J.D. Salinger",
+    PharmName: "CVS",
+    PharmAddress: "123 Main St",
     PharmPhone: "252 312 2314",
     PharmDrugNum: "12334",
     PharmFillDate: "12/12/1234",
@@ -55,8 +55,8 @@ const bookSeed = [
     date: new Date(Date.now())
   },
   {
-    PharmName: "The Punch Escrow",
-    PharmAddress: "Tal M. Klein",
+    PharmName: "Kroger",
+    PharmAddress: "4456 King Ave",
     PharmPhone: "252 312 2314",
     PharmDrugNum: "12334",
     PharmFillDate: "12/12/1234",

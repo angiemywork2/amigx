@@ -11,6 +11,8 @@ import otcEs from "./pages/otcEs";
 import Login from "./pages/Login";
 import Medication from "./pages/Medication";
 import MedicationEs from "./pages/MedicationEs";
+import Detail from "./pages/Detail";
+import DetailEs from "./pages/DetailEs";
 import MedMinder from "./pages/MedMinder";
 import MedMinderEs from "./pages/MedMinderEs";
 import Navbar from 'react-navbar';
@@ -116,6 +118,7 @@ class App extends Component {
                       <Route exact path="/TipsEs" component={TipsEs} />
                       <Route exact path="/otcEs" component={otcEs} />
                       <Route exact path="/MedicationEs" component={MedicationEs} />
+                      <Route exact path = "/prescriptions/:id" component={DetailEs} />
                       <Route exact path="/Login" render={(props) => <Login auth={auth} {...props} />} /> 
                       <Route exact path="/MedicationEs" render={(props) => <Login auth={auth} {...props} />} /> 
                       <Route exact path="/MedMinderEs" component={MedMinderEs} /> 
@@ -138,6 +141,7 @@ class App extends Component {
                       <Route exact path="/Tips" component={Tips} />
                       <Route exact path="/otc" component={otc} />
                       <Route exact path="/Medication" component={Medication} />
+                      <Route exact path = "/prescriptions/:id" component={Detail} />
                       <Route exact path="/login" render={(props) => <Login auth={auth} {...props} />} /> 
                       <Route exact path="/Medication" render={(props) => <Login auth={auth} {...props} />} /> 
                       <Route exact path="/MedMinder" component={MedMinder} /> 

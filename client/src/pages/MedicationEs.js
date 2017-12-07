@@ -113,14 +113,14 @@ class MedicationEs extends Component {
   };
 
   componentDidMount() {
-    this.loadPrescriptions;
+    this.loadPrescriptions();
   };
 
   loadPrescriptions = () => {
     API.getPrescriptions()
       .then(res => 
-        this.setState({ prescriptions: res.data, PharmName:"" ,
-    PharmAddress:"" })
+        this.setState({ prescriptions: res.data, PharmName:"",
+    PharmAddress:"", PharmPhone:"", PharmDrugNum:"", PharmFillDate:"", DocName:"", PatientName:"", DrugInstruct:"", DrugName:"", DrugRefill:"", DrugUseByDate:"" })
         )
       .catch(err => console.log(err));
   };
@@ -282,7 +282,7 @@ class MedicationEs extends Component {
                       <ListItem key={prescription._id}>
                         <Link to={"/prescriptions/" + prescription._id}>
                           <strong>
-                            {prescription.PatientName} by {prescription.DrugName}
+                            {prescription.DrugName} para {prescription.PatientName}
                           </strong>
                         </Link>
                         <DeleteBtn onClick={() => this.deletePrescription(prescription._id)} />
