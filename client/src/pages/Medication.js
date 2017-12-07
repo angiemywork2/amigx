@@ -201,6 +201,11 @@ class Medication extends Component {
                 <Jumbotron>
                   <form>
                     <Input
+                      value = {this.state.PatientName}
+                      onChange={this.handleInputChange} 
+                      name="PatientName"
+                      placeholder="Patient Name (required)" />
+                    <Input
                       value = {this.state.PharmName}
                       onChange={this.handleInputChange} 
                       name="PharmName"
@@ -209,12 +214,12 @@ class Medication extends Component {
                       value = {this.state.PharmAddress}
                       onChange={this.handleInputChange}
                       name="PharmAddress"
-                      placeholder="Pharmacy Address (required)" />
+                      placeholder="Pharmacy Address (optional)" />
                     <Input 
                       value = {this.state.PharmPhone}
                       onChange={this.handleInputChange}
                       name="PharmPhone"
-                      placeholder="Pharmacy Telephone Number (required)" />
+                      placeholder="Pharmacy Telephone Number (optional)" />
                     <Input 
                       value = {this.state.PharmDrugNum}
                       onChange={this.handleInputChange}
@@ -224,17 +229,12 @@ class Medication extends Component {
                       value = {this.state.PharmFillDate}
                       onChange={this.handleInputChange}
                       name="PharmFillDate"
-                      placeholder="Prescription Fill Date(required)" />
+                      placeholder="Prescription Fill Date(optional)" />
                     <Input 
                       value = {this.state.DocName}
                       onChange={this.handleInputChange}
                       name="DocName"
                       placeholder="Doctor's Name (required)" />
-                    <Input
-                      value = {this.state.PatientName}
-                      onChange={this.handleInputChange} 
-                      name="PatientName"
-                      placeholder="Patient Name (required)" />
                     <TextArea 
                       value = {this.state.DrugInstruct}
                       onChange={this.handleInputChange}
@@ -249,12 +249,12 @@ class Medication extends Component {
                       value = {this.state.DrugRefill}
                       onChange={this.handleInputChange}
                       name="DrugRefill"
-                      placeholder="Drug refills (required)"/>
+                      placeholder="Drug refills (optional)"/>
                     <Input 
                       value = {this.state.DrugUseByDate}
                       onChange={this.handleInputChange}
                       name="DrugUseByDate"
-                      placeholder="Use By Date (required)"/>
+                      placeholder="Use By Date (optional)"/>
 
                     <FormBtn
                       disabled = {!(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate)}

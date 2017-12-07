@@ -205,6 +205,11 @@ class MedicationEs extends Component {
               <div className="col-md-5 col-md-offset-1">
                 <Jumbotron>
                   <form>
+                      <Input
+                      value = {this.state.PatientName}
+                      onChange={this.handleInputChange} 
+                      name="PatientName"
+                      placeholder="Nombre del Paciente (necesario)" />
                     <Input
                       value = {this.state.PharmName}
                       onChange={this.handleInputChange} 
@@ -214,12 +219,12 @@ class MedicationEs extends Component {
                       value = {this.state.PharmAddress}
                       onChange={this.handleInputChange}
                       name="PharmAddress"
-                      placeholder="Direccion de Farmacia (necesario)" />
+                      placeholder="Direccion de Farmacia (optativo)" />
                     <Input 
                       value = {this.state.PharmPhone}
                       onChange={this.handleInputChange}
                       name="PharmPhone"
-                      placeholder="Numero de Teléfono de Farmacia (necesario)" />
+                      placeholder="Numero de Teléfono de Farmacia (optativo)" />
                     <Input 
                       value = {this.state.PharmDrugNum}
                       onChange={this.handleInputChange}
@@ -229,17 +234,12 @@ class MedicationEs extends Component {
                       value = {this.state.PharmFillDate}
                       onChange={this.handleInputChange}
                       name="PharmFillDate"
-                      placeholder="Fecha de Llenado(necesario)" />
+                      placeholder="Fecha de Llenado(optativo)" />
                     <Input 
                       value = {this.state.DocName}
                       onChange={this.handleInputChange}
                       name="DocName"
                       placeholder="Nombre del Doctor (necesario)" />
-                    <Input
-                      value = {this.state.PatientName}
-                      onChange={this.handleInputChange} 
-                      name="PatientName"
-                      placeholder="Nombre del Paciente (necesario)" />
                     <TextArea 
                       value = {this.state.DrugInstruct}
                       onChange={this.handleInputChange}
@@ -254,12 +254,12 @@ class MedicationEs extends Component {
                       value = {this.state.DrugRefill}
                       onChange={this.handleInputChange}
                       name="DrugRefill"
-                      placeholder="Rellenos de Medicamento (necesario)"/>
+                      placeholder="Rellenos de Medicamento (optativo)"/>
                     <Input 
                       value = {this.state.DrugUseByDate}
                       onChange={this.handleInputChange}
                       name="DrugUseByDate"
-                      placeholder="Fecha de Caducidad (necesario)"/>
+                      placeholder="Fecha de Caducidad (optativo)"/>
 
                     <FormBtn
                       disabled = {!(this.state.PharmName && this.state.PharmAddress && this.state.PharmPhone && this.state.PharmDrugNum && this.state.PharmFillDate && this.state.DocName && this.state.PatientName && this.state. DrugInstruct && this.state.DrugName && this.state.DrugRefill && this.state.DrugUseByDate)}
