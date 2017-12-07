@@ -24,6 +24,8 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 import DisclaimerEs from "../components/DisclaimerEs";
 import "./Home.css";
 
+import Amigx from './amigxlogo.jpg';
+
 import App from "../App";
 
 
@@ -87,24 +89,25 @@ const HomeEs = () =>
         <h2><center>Tu salud es importante!</center></h2>
           <div className="row">
             <div className="text-center">
-              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
-          </div>
+              <h3>Mi Amigx está aquí para ayudarlo a controlar su salud ayudándole a 
+              administrar sus medicamentos. Re encontrará información útil para los 
+              medicamentos de venta libre comúnmente usados. Usted puede ¡también 
+              personalice una lista de sus medicamentos y establezca recordatorios para 
+              que nunca se salte una dosis otra vez!</h3>
+            </div>
           </div><br />
       
-        <div className="row">
-            <div className="text-center">
-              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">Español
-              </button>
-              <div id="demo" className="collapse">
-                <div className="thumbnail">  
-                 <div className="caption, text-center">
-                      <p>Here is an example of a medical prescription</p>
-                  </div>
-                  <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
-                </div>
-              </div>
-            </div>
+         <div className="row">
+          
+                  <div id="amigx">
+                  <img src={Amigx} alt="react-pillbottle - Logo" align="center" width="300px" height="300px" />     
+                 </div>
+                  
+               
+              
+            
           </div>
+
         </Jumbotron>
       </Col>
     </Row>

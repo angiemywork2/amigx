@@ -3,6 +3,8 @@ import history from '../history';
 const ID_TOKEN_KEY = 'id_token';
 const ACCESS_TOKEN_KEY = 'access_token';
 
+
+
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'amigx.auth0.com',
@@ -12,6 +14,8 @@ export default class Auth {
     responseType: 'token id_token',
     scope: 'openid'
   });
+
+   
 
   login() {
     this.auth0.authorize();
@@ -53,6 +57,7 @@ export default class Auth {
     localStorage.removeItem('expires_at');
     // navigate to the home route
     history.replace('/Login');
+   
   }
 
   isAuthenticated() {
