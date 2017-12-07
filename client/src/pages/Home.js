@@ -22,6 +22,8 @@ import { Input, TextArea, FormBtn } from "../components/Form";
 
 import Disclaimer from "../components/Disclaimer";
 import "./Home.css";
+// import "./client/public/img/amigxlogo.jpg";
+import Amigx from './amigxlogo.jpg';
 
 import App from "../App";
 
@@ -86,23 +88,21 @@ const Home = () =>
         <h2><center> Your Health is Important!!!!</center></h2>
           <div className="row">
             <div className="text-center">
-              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">English</button>
-          </div>
+              <h3>Mi Amigx is here to help you manage your health by helping you manage your medications.  
+              re you will find helpful information for commonly used over the counter medications.  You can 
+              also customize a list of your medications and set reminders so that you never skip a dose again!</h3>
+            </div>
           </div><br />
       
         <div className="row">
-            <div className="text-center">
-              <button type="button" className="btn btn-primary btn-sx" data-toggle="collapse" data-target="#demo">Español
-              </button>
-              <div id="demo" className="collapse">
-                <div className="thumbnail">  
-                 <div className="caption, text-center">
-                      <p>Here is an example of a medical prescription</p>
-                  </div>
-                  <img src="https://i.pinimg.com/736x/34/72/7c/34727c2d10cb6ec5c484e3b2c1c62699--ldr-gifts-medical-science.jpg" alt="Lights" className="img-responsive"/>
-                </div>
-              </div>
-            </div>
+          
+                  <div id="amigx">
+                  <img src={Amigx} alt="react-pillbottle - Logo" align="center" width="300px" height="300px" />     
+                 </div>
+                  
+               
+              
+            
           </div>
         </Jumbotron>
       </Col>
